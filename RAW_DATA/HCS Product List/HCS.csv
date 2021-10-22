@@ -1,0 +1,291 @@
+Food,Food_ID
+Artichoke,1
+Arugula,2
+Asparagus,3
+Aubergine,4
+Beetroot,5
+Bell Pepper,6
+Black Olives,7
+Broccoli,8
+Brussels Sprouts,9
+Cabbage,10
+Capsicum,11
+Carrot,12
+Cauliflower,13
+Celery,14
+Chard,15
+Cherry Tomato,16
+Chicory,17
+Chinese Cabbage,18
+Chives,19
+Collard Greens,20
+Corn,21
+Courgette,22
+Creamed Spinach,23
+Cucumber,24
+Eggplant,25
+Endive,26
+Fennel,27
+Garlic,28
+Gherkin,29
+Gourd,30
+Green Beans,31
+Green Olives,32
+Green Onion,33
+Horseradish,34
+Kale,35
+Kohlrabi,36
+Kumara,37
+Leek,38
+Lettuce,39
+Mushrooms,40
+Mustard Greens,41
+Nori,42
+Okra,43
+Olives,44
+Onion,45
+Parsnips,46
+Peas,47
+Pepper,48
+Potato,49
+Pumpkin,50
+Radishes,51
+Red Cabbage,52
+Rutabaga,53
+Shallots,54
+Spinach,55
+Squash,56
+Sweet Potato,57
+Tomato,58
+Turnip Greens,59
+Apple,65
+Applesauce,66
+Avocado,68
+Banana,69
+Blackberries,70
+Blood Oranges,71
+Blueberries,72
+Cantaloupe,73
+Cherries,74
+Clementine,75
+Cranberries,76
+Currants,77
+Custard Apple,78
+Fruit salad,81
+Grapes,82
+Greengage,83
+Guava,84
+Jackfruit,85
+Jujube,86
+Kiwi,87
+Lemon,88
+Lime,89
+Lychees,90
+Mandarin Oranges,91
+Mango,92
+Minneola,93
+Mulberries,94
+Olivess,96
+Orange,97
+Papaya,98
+Passion Fruit,99
+Peach,100
+Pear,101
+Pineapple,104
+Plantains,105
+Plum,106
+Pomegranate,107
+Raisins,109
+Rambutan,110
+Raspberries,111
+Rhubarb,112
+Starfruit,113
+Strawberries,114
+Tamarind,115
+Tangerine,116
+Watermelon,117
+Baby Back Ribs,118
+Bacon and Eggs,119
+Baked Beans,120
+BBQ Ribs,121
+Beef Stew,122
+Black Rice,125
+Brown Rice,127
+Burrito,128
+Butter Chicken,129
+California Roll,130
+Chicken Caesar Salad,131
+Chicken Marsala,133
+Chili con Carne,137
+Chimichanga,138
+Cobb Salad,139
+Collard Greenss,140
+Corn Dog,141
+Corned Beef Hash,142
+Cottage Pie,143
+Dal,144
+Deviled Eggs,145
+Dosa,147
+Grilled Cheese Sandwich,153
+Ham and Cheese Sandwich,154
+Hummus,155
+Jambalaya,156
+Lasagne,158
+Mac and Cheese,159
+Macaroni and Cheese,160
+Mashed Potatoes,161
+Naan,164
+Orange Chicken,165
+Paella,167
+Paratha,168
+Pea Soup,169
+Peanut Butter Sandwich,170
+Potato Salad,175
+Pulled Pork Sandwich,176
+Ramen,177
+Reuben Sandwich,179
+Roast Beef,180
+Roast Dinner,181
+Samosa,182
+Sausage Roll,183
+Sausage Rolls,184
+Shepherds Pie,185
+Barley,196
+Barley Groats,197
+Brown Rices,198
+Buckwheat,199
+Buckwheat Groats,200
+Oat Bran,215
+Pearl Barley,216
+Shortbread,225
+Wheat Bran,232
+Wheat Germ,233
+Wheat Gluten,234
+Wheat Semolina,235
+Wheat Starch,236
+Whole Grain Wheat,237
+Wholegrain Oat,238
+Alphabet Soup,272
+Bean Stew,273
+Beef Bouillon,274
+Beef Noodle Soup,275
+Beef Soup,276
+Bouillon,277
+Broccoli Cheese Soup,278
+Broccoli Soup,279
+Cabbage Soup,280
+Carrot Ginger Soup,281
+Carrot Soup,282
+Chicken Bouillon,283
+Chicken Broth,284
+Chicken Gumbo Soup,285
+Chicken Noodle Soup,286
+Chicken Stock,287
+Chicken Vegetable Soup,288
+Chicken with Rice Soup,289
+Cream of Asparagus Soup,290
+Cream of Broccoli Soup,291
+Cream of Celery Soup,292
+Cream of Chicken Soup,293
+Cream of Mushroom Soup,294
+Cream of Onion Soup,295
+Cream of Potato Soup,296
+Creamy Chicken Noodle Soup,297
+French Onion Soup,298
+Golden Mushroom Soup,299
+Goulash,300
+Instant Ramen,301
+Lentil Soup,302
+Lobster Bisque Soup,303
+Meatball Soup,304
+Minestrone,305
+Mushroom Soup,306
+Noodle Soup,307
+Onion Soup,308
+Oxtail Soup,309
+Pea Soups,310
+Potato Soup,311
+Pumpkin Soup,312
+Ramens,313
+Scotch Broth,314
+Thai Soup,316
+Tomato Rice Soup,317
+Tomato Soup,318
+Vegetable Beef Soup,319
+Vegetable Broth,320
+Vegetable Soup,321
+Vegetable Stock,322
+Healthy Choice,341
+Ice Milk,345
+Magnolia,346
+Cellophane Noodles,372
+Cheese Tortellini,373
+Durum Wheat Semolina,376
+Egg Noodles,377
+Farfalle,378
+Fusilli,380
+Glass Noodles,381
+Lasagne Sheets,382
+Low Carb Pasta,384
+Macaroni,385
+Manicotti,386
+Mostaccioli,387
+Orecchiette,388
+Penne,390
+Penne Rigate,391
+Pierogi,392
+Ravioli,393
+Rigatoni,394
+Shirataki Noodles,397
+Soy Noodles,398
+Spaghetti,400
+Spinach Tortellini,401
+Spirelli,402
+Tortellini,404
+Vermicelli,405
+Whole Grain Noodles,406
+Whole Grain Spaghetti,407
+Asian Pear,453
+Ananas,454
+Bananas,455
+Breadfruit,456
+Cantaloupe Melon,457
+Casaba Melon,458
+Dragon Fruit,460
+Galia Melon,463
+Grapefruit,464
+Guavas,465
+Honeydew,466
+Jackfruits,467
+Kiwis,468
+Kumquat,469
+Lychee,470
+Mandarin Orangess,471
+Mangoes,472
+Mangosteen,473
+Maraschino Cherries,475
+Muskmelon,476
+Passion Fruits,478
+Pineapples,479
+Pink Grapefruit,480
+Pomegranates,482
+Pomelo,483
+Prickly Pear,484
+Rambutans,485
+Soursop Fruit,487
+Star Fruit,488
+Watermelons,490
+Burger King Original Chicken Sandwich,502
+Burger King Premium Alaskan Fish Sandwich,503
+Chicken Sandwich,514
+Falafel,521
+Fish Sandwich,524
+Grilled Chicken Salad,526
+Ham Sandwich,527
+Hamburger,528
+Hot Dog,529
+Spicy Italian,548
+Subway Club Sandwich,549
+Veggie Burger,553
+Veggie Delight,554
+Veggie Patty,555
