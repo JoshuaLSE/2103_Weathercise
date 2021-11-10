@@ -1,239 +1,238 @@
-Type,Location,Activity,Intensity,Calories/gram
-Ice,Indoor,Ice skating, < 9 mph,5.50541
-Ice,Indoor,Ice skating, average speed,7.00576
-Ice,Indoor,Ice skating, rapidly,9.00573
-Ice,Indoor,Speed skating," ice, competitive",15.01438
-Ice,,Cross country snow skiing, slow,7.00576
-Ice,,Cross country skiing, moderate,8.00862
-Ice,,Cross country skiing, vigorous,9.00573
-Ice,,Cross country skiing, racing,14.01065
-Ice,,Cross country skiing, uphill,16.51504
-Ice,,Snow skiing," downhill skiing, light",5.00492
-Ice,,Downhill snow skiing, moderate,6.00203
-Ice,,Downhill snow skiing, racing,8.00862
-Ice,,Sledding," tobagganing, luge",7.00576
-Ice,,Snow shoeing,,8.00862
-Ice,,Snowmobiling,,3.50456
-Ice,,Shoveling snow by hand,,6.00203
-Land,Outdoor,Cycling," mountain bike, bmx",8.50948
-Land,Outdoor,Cycling," <10 mph, leisure bicycling",4.00119
-Land,Outdoor,Cycling," >20 mph, racing",16.01455
-Land,Outdoor,Cycling," 10-11.9 mph, light",6.00203
-Land,Outdoor,Cycling," 12-13.9 mph, moderate",8.00862
-Land,Outdoor,Cycling," 14-15.9 mph, vigorous",10.00946
-Land,Outdoor,Cycling," 16-19 mph, very fast, racing",12.00981
-Land,Outdoor,Unicycling,,5.00492
-Land,Indoor,Stationary cycling, very light,3.00101
-Land,Indoor,Stationary cycling, light,5.50541
-Land,Indoor,Stationary cycling, moderate,7.00576
-Land,Indoor,Stationary cycling, vigorous,10.51032
-Land,Indoor,Stationary cycling, very vigorous,12.51422
-Land,Anywhere,Calisthenics," vigorous, pushups, situpS",8.00862
-Land,Anywhere,Calisthenics, light,3.50456
-Land,Anywhere,Circuit training, minimal rest,8.00862
-Land,Indoor,Weight lifting," body building, vigorous",6.00203
-Land,Indoor,Weight lifting, light workout,3.00101
-,,,,
-Land,Indoor,Stair machine,,9.00573
-Land,Indoor,Rowing machine, light,3.50456
-Land,Indoor,Rowing machine, moderate,7.00576
-Land,Indoor,Rowing machine, vigorous,8.50948
-Land,Indoor,Rowing machine, very vigorous,12.00981
-Land,Indoor,Ski machine,,7.00576
-Land,Anywhere,Aerobics, low impact,5.00492
-Land,Anywhere,Aerobics, high impact,7.00576
-Land,Anywhere,Aerobics, step aerobics,8.50948
-Land,Anywhere,Aerobics, general,6.50558
-Land,,Jazzercise,,6.00203
-Land,,Stretching,Yoga,4.00119
-Land,Anywhere,Stretching,Mild,2.50439
-,,,,
-Land,Indoor,Ballet," twist, jazz, tap",4.50829
-Land,Indoor,Ballroom dancing, slow,3.00101
-Land,Indoor,Ballroom dancing, fast,5.50541
-Land,Anywhere,Running, 5 mph (12 minute mile),8.00862
-Land,Anywhere,Running, 5.2 mph (11.5 minute mile),9.00573
-Land,Anywhere,Running, 6 mph (10 min mile),10.00946
-Land,Anywhere,Running, 6.7 mph (9 min mile),11.00963
-Land,Anywhere,Running, 7 mph (8.5 min mile),11.5105
-Land,Anywhere,Running, 7.5mph (8 min mile),12.51422
-Land,Anywhere,Running, 8 mph (7.5 min mile),13.51134
-Land,Anywhere,Running, 8.6 mph (7 min mile),14.01065
-Land,Anywhere,Running, 9 mph (6.5 min mile),15.01438
-Land,Anywhere,Running, 10 mph (6 min mile),16.01455
-Land,Anywhere,Running, 10.9 mph (5.5 min mile),18.01539
-Land,Anywhere,Running, cross country,9.00573
-Land,Anywhere,Running, general,8.00862
-Land,Anywhere,Running," on a track, team practice",10.00946
-Land,Anywhere,Running," stairs, up",15.01438
-Land,Outdoor,Track and field (shot, discus),4.00119
-Land,Outdoor,Track and field (high jump, pole vault),6.00203
-Land,Outdoor,Track and field (hurdles),,10.00946
-Land,,Archery,,3.50456
-Land,,Badminton,,4.50829
-Land,,Basketball, Competitive,8.00862
-Land,,Basketball, Casual,6.00203
-Land,,Basketball, officiating,7.00576
-Land,,Basketball, shooting baskets,4.50829
-Land,,Basketball, wheelchair,6.50558
-Land,,Running," training, pushing wheelchair",8.00862
-Land,,Billiards,,2.50439
-Land,Indoor,Bowling,,3.00101
-Land,Anywhere,Boxing, in ring,12.00981
-Land,Anywhere,Boxing, punching bag,6.00203
-Land,Anywhere,Boxing, sparring,9.00573
-Land,,Coaching: football," basketball, soccer",4.00119
-Land,,Cricket (batting, bowling),5.00492
-Land,,Croquet,,2.50439
-Land,,Curling,,4.00119
-Land,,Darts (wall or lawn),,2.50439
-Land,,Fencing,,6.00203
-Land,,Football, competitive,9.00573
-Land,,Football," touch, flag, general",8.00862
-Land,,Football or baseball, playing catch,2.50439
-Land,,Frisbee playing, general,3.00101
-Land,,Frisbee, ultimate frisbee,8.00862
-Land,Outdoor,Golf, general,4.50829
-Land,Outdoor,Golf, walking and carrying clubs,4.50829
-Land,Outdoor,Golf, driving range,3.00101
-Land,Outdoor,Golf, miniature golf,3.00101
-Land,Outdoor,Golf, walking and pulling clubs,4.3045
-Land,Outdoor,Golf, using power cart,3.50456
-Land,Indoor,Gymnastics,,4.00119
-,,,,
-Land,,Handball,,12.00981
-Land,,Handball, team,8.00862
-Land,,Hockey, field hockey,8.00862
-Land,,Hockey, ice hockey,8.00862
-Land,,Riding a horse, general,4.00119
-Land,,Horesback riding, saddling horse,3.50456
-Land,,Horseback riding, grooming horse,3.50456
-Land,,Horseback riding, trotting,6.50558
-Land,,Horseback riding, walking,2.50439
-Land,,Horse racing, galloping,8.00862
-Land,,Horse grooming, moderate,6.00203
-Land,,Horseshoe pitching,,3.00101
-Land,,Jai alai,,12.00981
-Land,,Martial arts," judo, karate, jujitsu",10.00946
-Land,,Martial arts, kick boxing,10.00946
-Land,,Martial arts, tae kwan do,10.00946
-Land,,Krav maga training,,10.00946
-Land,,Juggling,,4.00119
-Land,,Kickball,,7.00576
-Land,,Lacrosse,,8.00862
-Land,,Orienteering,,9.00573
-Land,,Playing paddleball,,6.00203
-Land,,Paddleball, competitive,10.00946
-Land,,Polo,,8.00862
-Land,,Racquetball, competitive,10.00946
-Land,,Playing racquetball,,7.00576
-Land,,Rock climbing, ascending rock,11.00963
-Land,,Rock climbing, rappelling,8.00862
-Land,,Jumping rope, fast,12.00981
-Land,,Jumping rope, moderate,10.00946
-Land,,Jumping rope, slow,8.00862
-Land,,Rugby,,10.00946
-Land,,Shuffleboard, lawn bowling,3.00101
-Land,,Skateboarding,,5.00492
-Land,,Roller skating,,7.00576
-Land,,Roller blading, in-line skating,12.00981
-Land,,Sky diving,,3.00101
-Land,,Soccer, competitive,10.00946
-Land,,Playing soccer,,7.00576
-Land,,Softball or baseball,,5.00492
-Land,,Softball, officiating,4.00119
-Land,,Softball, pitching,6.00203
-Land,,Squash,,12.00981
-Land,,Table tennis, ping pong,4.00119
-Land,,Tai chi,,4.00119
-Land,,Playing tennis,,7.00576
-Land,,Tennis, doubles,6.00203
-Land,,Tennis, singles,8.00862
-Land,,Trampoline,,3.50456
-Land,,Volleyball, competitive,8.00862
-Land,,Playing volleyball,,3.00101
-Land,,Volleyball, beach,8.00862
-Land,,Wrestling,,6.00203
-Land,,Wallyball,,7.00576
-Land,,Backpacking, Hiking with pack,7.00576
-Land,,Carrying," infant, level ground",3.50456
-Land,,Carrying," infant, upstairs",5.00492
-Land,,Carrying," 16 to 24 lbs, upstairs",6.00203
-Land,,Carrying," 25 to 49 lbs, upstairs",8.00862
-Land,,Standing," playing with children, light",2.80297
-Land,,Walk/run," playing with children, moderate",4.00119
-Land,,Walk/run," playing with children, vigorous",5.00492
-Land,,Carrying small children,,3.00101
-Land,,Loading, unloading car,3.00101
-Land,,Climbing hills, carrying up to 9 lbs,7.00576
-Land,,Climbing hills, carrying 10 to 20 lb,7.50931
-Land,,Climbing hills, carrying 21 to 42 lb,8.00862
-Land,,Climbing hills, carrying over 42 lb,9.00573
-Land,,Walking downstairs,,3.00101
-Land,,Hiking, cross country,6.00203
-Land,,Bird watching,,2.50439
-Land,,Marching," rapidly, military",6.50558
-Land,,Children's games," hopscotch, dodgeball",5.00492
-Land,,Pushing stroller or walking with children,,2.50439
-Land,,Pushing a wheelchair,,4.00119
-Land,,Race walking,,6.50558
-Land,,Rock climbing, mountain climbing,8.00862
-Land,,Walking using crutches,,5.00492
-Land,,Walking the dog,,3.00101
-Land,,Walking," under 2.0 mph, very slow",2.00084
-Land,,Walking 2.0 mph, slow,2.50439
-Land,,Walking 2.5 mph,,3.00101
-Land,,Walking 3.0 mph, moderate,3.30383
-Land,,Walking 3.5 mph, brisk pace,3.80314
-Land,,Walking 3.5 mph, uphill,6.00203
-Land,,Walking 4.0 mph, very brisk,5.00492
-Land,,Walking 4.5 mph,,6.30485
-Land,,Walking 5.0 mph,,8.00862
-Land,,Skiing, water skiing,6.00203
-Land,,Ski mobiling,,7.00576
-Land,,Raking lawn,,4.3045
-Land,,Gardening, general,4.00119
-Land,,Bagging grass, leaves,4.00119
-Land,,Watering lawn or garden,,1.50728
-Land,,Weeding, cultivating garden,4.50829
-Land,,Carpentry, general,3.50456
-Land,,Carrying heavy loads,,8.00862
-Land,,Carrying moderate loads upstairs,,8.00862
-Land,,General cleaning,,3.50456
-Land,,Cleaning, dusting,2.50439
-Land,,Taking out trash,,3.00101
-Land,,Walking, pushing a wheelchair,4.00119
-Land,,Teach physical education,exercise class,4.00119
-Water,,Water aerobics,,4.00119
-Water,,Boating," power, speed boat",2.50439
-Water,,Canoeing, camping trip,4.00119
-Water,,Canoeing," rowing, light",3.00101
-Water,,Canoeing," rowing, moderate",7.00576
-Water,,Canoeing," rowing, vigorous",12.00981
-Water,,Crew," sculling, rowing, competition",12.00981
-Water,,Kayaking,,5.00492
-Water,,Paddle boat,,4.00119
-Water,,Windsurfing, sailing,3.00101
-Water,,Sailing, competition,5.00492
-Water,,Sailing," yachting, ocean sailing",3.00101
-Water,,Skin diving, fast,16.01455
-Water,,Skin diving, moderate,12.51422
-Water,,Skin diving, scuba diving,7.00576
-Water,,Snorkeling,,5.00492
-Water,,Surfing, body surfing or board surfing,3.00101
-Water,,Whitewater rafting," kayaking, canoeing",5.00492
-Water,,Swimming," freestyle, fast",10.00946
-Water,,Swimming," freestyle, slow",7.00576
-Water,,Swimming, backstroke,7.00576
-Water,,Swimming, breaststroke,10.00946
-Water,,Swimming butterfly,,11.00963
-Water,,Swimming leisurely, not laps,6.00203
-Water,,Swimming sidestroke,,8.00862
-Water,,Swimming synchronized,,8.00862
-Water,,Swimming," treading water, fast, vigorous",10.00946
-Water,,Swimming," treading water, moderate",4.00119
-Water,,Water aerobics, water calisthenics,4.00119
-Water,,Water polo,,10.00946
-Water,,Water volleyball,,3.00101
-Water,,Water jogging,,8.00862
-Water,,Diving, springboard or platform,3.00101
+1,Ice,Indoor,Ice skating, < 9 mph,5.50541
+2,Ice,Indoor,Ice skating, average speed,7.00576
+3,Ice,Indoor,Ice skating, rapidly,9.00573
+4,Ice,Indoor,Speed skating," ice, competitive",15.01438
+5,Ice,,Cross country snow skiing, slow,7.00576
+6,Ice,,Cross country skiing, moderate,8.00862
+7,Ice,,Cross country skiing, vigorous,9.00573
+8,Ice,,Cross country skiing, racing,14.01065
+9,Ice,,Cross country skiing, uphill,16.51504
+10,Ice,,Snow skiing," downhill skiing, light",5.00492
+11,Ice,,Downhill snow skiing, moderate,6.00203
+12,Ice,,Downhill snow skiing, racing,8.00862
+13,Ice,,Sledding," tobagganing, luge",7.00576
+14,Ice,,Snow shoeing,,8.00862
+15,Ice,,Snowmobiling,,3.50456
+16,Ice,,Shoveling snow by hand,,6.00203
+17,Land,Outdoor,Cycling," mountain bike, bmx",8.50948
+18,Land,Outdoor,Cycling," <10 mph, leisure bicycling",4.00119
+19,Land,Outdoor,Cycling," >20 mph, racing",16.01455
+20,Land,Outdoor,Cycling," 10-11.9 mph, light",6.00203
+21,Land,Outdoor,Cycling," 12-13.9 mph, moderate",8.00862
+22,Land,Outdoor,Cycling," 14-15.9 mph, vigorous",10.00946
+23,Land,Outdoor,Cycling," 16-19 mph, very fast, racing",12.00981
+24,Land,Outdoor,Unicycling,,5.00492
+25,Land,Indoor,Stationary cycling, very light,3.00101
+26,Land,Indoor,Stationary cycling, light,5.50541
+27,Land,Indoor,Stationary cycling, moderate,7.00576
+28,Land,Indoor,Stationary cycling, vigorous,10.51032
+29,Land,Indoor,Stationary cycling, very vigorous,12.51422
+30,Land,Anywhere,Calisthenics," vigorous, pushups, situpS",8.00862
+31,Land,Anywhere,Calisthenics, light,3.50456
+32,Land,Anywhere,Circuit training, minimal rest,8.00862
+33,Land,Indoor,Weight lifting," body building, vigorous",6.00203
+34,Land,Indoor,Weight lifting, light workout,3.00101
+35,,,,,
+36,Land,Indoor,Stair machine,,9.00573
+37,Land,Indoor,Rowing machine, light,3.50456
+38,Land,Indoor,Rowing machine, moderate,7.00576
+39,Land,Indoor,Rowing machine, vigorous,8.50948
+40,Land,Indoor,Rowing machine, very vigorous,12.00981
+41,Land,Indoor,Ski machine,,7.00576
+42,Land,Anywhere,Aerobics, low impact,5.00492
+43,Land,Anywhere,Aerobics, high impact,7.00576
+44,Land,Anywhere,Aerobics, step aerobics,8.50948
+45,Land,Anywhere,Aerobics, general,6.50558
+46,Land,,Jazzercise,,6.00203
+47,Land,,Stretching,Yoga,4.00119
+48,Land,Anywhere,Stretching,Mild,2.50439
+49,,,,,
+50,Land,Indoor,Ballet," twist, jazz, tap",4.50829
+51,Land,Indoor,Ballroom dancing, slow,3.00101
+52,Land,Indoor,Ballroom dancing, fast,5.50541
+53,Land,Anywhere,Running, 5 mph (12 minute mile),8.00862
+54,Land,Anywhere,Running, 5.2 mph (11.5 minute mile),9.00573
+55,Land,Anywhere,Running, 6 mph (10 min mile),10.00946
+56,Land,Anywhere,Running, 6.7 mph (9 min mile),11.00963
+57,Land,Anywhere,Running, 7 mph (8.5 min mile),11.5105
+58,Land,Anywhere,Running, 7.5mph (8 min mile),12.51422
+59,Land,Anywhere,Running, 8 mph (7.5 min mile),13.51134
+60,Land,Anywhere,Running, 8.6 mph (7 min mile),14.01065
+61,Land,Anywhere,Running, 9 mph (6.5 min mile),15.01438
+62,Land,Anywhere,Running, 10 mph (6 min mile),16.01455
+63,Land,Anywhere,Running, 10.9 mph (5.5 min mile),18.01539
+64,Land,Anywhere,Running, cross country,9.00573
+65,Land,Anywhere,Running, general,8.00862
+66,Land,Anywhere,Running," on a track, team practice",10.00946
+67,Land,Anywhere,Running," stairs, up",15.01438
+68,Land,Outdoor,Track and field (shot, discus),4.00119
+69,Land,Outdoor,Track and field (high jump, pole vault),6.00203
+70,Land,Outdoor,Track and field (hurdles),,10.00946
+71,Land,,Archery,,3.50456
+72,Land,,Badminton,,4.50829
+73,Land,,Basketball, Competitive,8.00862
+74,Land,,Basketball, Casual,6.00203
+75,Land,,Basketball, officiating,7.00576
+76,Land,,Basketball, shooting baskets,4.50829
+77,Land,,Basketball, wheelchair,6.50558
+78,Land,,Running," training, pushing wheelchair",8.00862
+79,Land,,Billiards,,2.50439
+80,Land,Indoor,Bowling,,3.00101
+81,Land,Anywhere,Boxing, in ring,12.00981
+82,Land,Anywhere,Boxing, punching bag,6.00203
+83,Land,Anywhere,Boxing, sparring,9.00573
+84,Land,,Coaching: football," basketball, soccer",4.00119
+85,Land,,Cricket (batting, bowling),5.00492
+86,Land,,Croquet,,2.50439
+87,Land,,Curling,,4.00119
+88,Land,,Darts (wall or lawn),,2.50439
+89,Land,,Fencing,,6.00203
+90,Land,,Football, competitive,9.00573
+91,Land,,Football," touch, flag, general",8.00862
+92,Land,,Football or baseball, playing catch,2.50439
+93,Land,,Frisbee playing, general,3.00101
+94,Land,,Frisbee, ultimate frisbee,8.00862
+95,Land,Outdoor,Golf, general,4.50829
+96,Land,Outdoor,Golf, walking and carrying clubs,4.50829
+97,Land,Outdoor,Golf, driving range,3.00101
+98,Land,Outdoor,Golf, miniature golf,3.00101
+99,Land,Outdoor,Golf, walking and pulling clubs,4.3045
+100,Land,Outdoor,Golf, using power cart,3.50456
+101,Land,Indoor,Gymnastics,,4.00119
+102,,,,,
+103,Land,,Handball,,12.00981
+104,Land,,Handball, team,8.00862
+105,Land,,Hockey, field hockey,8.00862
+106,Land,,Hockey, ice hockey,8.00862
+107,Land,,Riding a horse, general,4.00119
+108,Land,,Horesback riding, saddling horse,3.50456
+109,Land,,Horseback riding, grooming horse,3.50456
+110,Land,,Horseback riding, trotting,6.50558
+111,Land,,Horseback riding, walking,2.50439
+112,Land,,Horse racing, galloping,8.00862
+113,Land,,Horse grooming, moderate,6.00203
+114,Land,,Horseshoe pitching,,3.00101
+115,Land,,Jai alai,,12.00981
+116,Land,,Martial arts," judo, karate, jujitsu",10.00946
+117,Land,,Martial arts, kick boxing,10.00946
+118,Land,,Martial arts, tae kwan do,10.00946
+119,Land,,Krav maga training,,10.00946
+120,Land,,Juggling,,4.00119
+121,Land,,Kickball,,7.00576
+122,Land,,Lacrosse,,8.00862
+123,Land,,Orienteering,,9.00573
+124,Land,,Playing paddleball,,6.00203
+125,Land,,Paddleball, competitive,10.00946
+126,Land,,Polo,,8.00862
+127,Land,,Racquetball, competitive,10.00946
+128,Land,,Playing racquetball,,7.00576
+129,Land,,Rock climbing, ascending rock,11.00963
+130,Land,,Rock climbing, rappelling,8.00862
+131,Land,,Jumping rope, fast,12.00981
+132,Land,,Jumping rope, moderate,10.00946
+133,Land,,Jumping rope, slow,8.00862
+134,Land,,Rugby,,10.00946
+135,Land,,Shuffleboard, lawn bowling,3.00101
+136,Land,,Skateboarding,,5.00492
+137,Land,,Roller skating,,7.00576
+138,Land,,Roller blading, in-line skating,12.00981
+139,Land,,Sky diving,,3.00101
+140,Land,,Soccer, competitive,10.00946
+141,Land,,Playing soccer,,7.00576
+142,Land,,Softball or baseball,,5.00492
+143,Land,,Softball, officiating,4.00119
+144,Land,,Softball, pitching,6.00203
+145,Land,,Squash,,12.00981
+146,Land,,Table tennis, ping pong,4.00119
+147,Land,,Tai chi,,4.00119
+148,Land,,Playing tennis,,7.00576
+149,Land,,Tennis, doubles,6.00203
+150,Land,,Tennis, singles,8.00862
+151,Land,,Trampoline,,3.50456
+152,Land,,Volleyball, competitive,8.00862
+153,Land,,Playing volleyball,,3.00101
+154,Land,,Volleyball, beach,8.00862
+155,Land,,Wrestling,,6.00203
+156,Land,,Wallyball,,7.00576
+157,Land,,Backpacking, Hiking with pack,7.00576
+158,Land,,Carrying," infant, level ground",3.50456
+159,Land,,Carrying," infant, upstairs",5.00492
+160,Land,,Carrying," 16 to 24 lbs, upstairs",6.00203
+161,Land,,Carrying," 25 to 49 lbs, upstairs",8.00862
+162,Land,,Standing," playing with children, light",2.80297
+163,Land,,Walk/run," playing with children, moderate",4.00119
+164,Land,,Walk/run," playing with children, vigorous",5.00492
+165,Land,,Carrying small children,,3.00101
+166,Land,,Loading, unloading car,3.00101
+167,Land,,Climbing hills, carrying up to 9 lbs,7.00576
+168,Land,,Climbing hills, carrying 10 to 20 lb,7.50931
+169,Land,,Climbing hills, carrying 21 to 42 lb,8.00862
+170,Land,,Climbing hills, carrying over 42 lb,9.00573
+171,Land,,Walking downstairs,,3.00101
+172,Land,,Hiking, cross country,6.00203
+173,Land,,Bird watching,,2.50439
+174,Land,,Marching," rapidly, military",6.50558
+175,Land,,Children's games," hopscotch, dodgeball",5.00492
+176,Land,,Pushing stroller or walking with children,,2.50439
+177,Land,,Pushing a wheelchair,,4.00119
+178,Land,,Race walking,,6.50558
+179,Land,,Rock climbing, mountain climbing,8.00862
+180,Land,,Walking using crutches,,5.00492
+181,Land,,Walking the dog,,3.00101
+182,Land,,Walking," under 2.0 mph, very slow",2.00084
+183,Land,,Walking 2.0 mph, slow,2.50439
+184,Land,,Walking 2.5 mph,,3.00101
+185,Land,,Walking 3.0 mph, moderate,3.30383
+186,Land,,Walking 3.5 mph, brisk pace,3.80314
+187,Land,,Walking 3.5 mph, uphill,6.00203
+188,Land,,Walking 4.0 mph, very brisk,5.00492
+189,Land,,Walking 4.5 mph,,6.30485
+190,Land,,Walking 5.0 mph,,8.00862
+191,Land,,Skiing, water skiing,6.00203
+192,Land,,Ski mobiling,,7.00576
+193,Land,,Raking lawn,,4.3045
+194,Land,,Gardening, general,4.00119
+195,Land,,Bagging grass, leaves,4.00119
+196,Land,,Watering lawn or garden,,1.50728
+197,Land,,Weeding, cultivating garden,4.50829
+198,Land,,Carpentry, general,3.50456
+199,Land,,Carrying heavy loads,,8.00862
+200,Land,,Carrying moderate loads upstairs,,8.00862
+201,Land,,General cleaning,,3.50456
+202,Land,,Cleaning, dusting,2.50439
+203,Land,,Taking out trash,,3.00101
+204,Land,,Walking, pushing a wheelchair,4.00119
+205,Land,,Teach physical education,exercise class,4.00119
+206,Water,,Water aerobics,,4.00119
+207,Water,,Boating," power, speed boat",2.50439
+208,Water,,Canoeing, camping trip,4.00119
+209,Water,,Canoeing," rowing, light",3.00101
+210,Water,,Canoeing," rowing, moderate",7.00576
+211,Water,,Canoeing," rowing, vigorous",12.00981
+212,Water,,Crew," sculling, rowing, competition",12.00981
+213,Water,,Kayaking,,5.00492
+214,Water,,Paddle boat,,4.00119
+215,Water,,Windsurfing, sailing,3.00101
+216,Water,,Sailing, competition,5.00492
+217,Water,,Sailing," yachting, ocean sailing",3.00101
+218,Water,,Skin diving, fast,16.01455
+219,Water,,Skin diving, moderate,12.51422
+220,Water,,Skin diving, scuba diving,7.00576
+221,Water,,Snorkeling,,5.00492
+222,Water,,Surfing, body surfing or board surfing,3.00101
+223,Water,,Whitewater rafting," kayaking, canoeing",5.00492
+224,Water,,Swimming," freestyle, fast",10.00946
+225,Water,,Swimming," freestyle, slow",7.00576
+226,Water,,Swimming, backstroke,7.00576
+227,Water,,Swimming, breaststroke,10.00946
+228,Water,,Swimming butterfly,,11.00963
+229,Water,,Swimming leisurely, not laps,6.00203
+230,Water,,Swimming sidestroke,,8.00862
+231,Water,,Swimming synchronized,,8.00862
+232,Water,,Swimming," treading water, fast, vigorous",10.00946
+233,Water,,Swimming," treading water, moderate",4.00119
+234,Water,,Water aerobics, water calisthenics,4.00119
+235,Water,,Water polo,,10.00946
+236,Water,,Water volleyball,,3.00101
+237,Water,,Water jogging,,8.00862
+238,Water,,Diving, springboard or platform,3.00101
