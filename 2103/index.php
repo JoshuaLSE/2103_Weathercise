@@ -18,14 +18,7 @@
     if ($conn->connect_error) {
       die("Connection failed: " . mysqli_connect_error());
     } 
-//    echo "connection successful";
-//    $query=$conn->prepare("SELECT * FROM ICT2103.food_calories;");
-//    $query->execute();
-//    $query->bind_result($food_ID,$Food,$Serving,$Calories,$gram,$User_ID);
-//    while($query->fetch())
-//    {
-//            echo "the food item is ".$Food.".";
-//    }
+
     $query->close();
     
 ?>
