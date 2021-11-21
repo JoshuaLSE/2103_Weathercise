@@ -7,10 +7,10 @@ if ($conn->connect_error) {
 }
 
 $sql = "SELECT * FROM User WHERE UserName = '$username' and Password='$password'  " ; 
-$sql_username = "SELECT UserName from Users where UserName ='$username'";
+$sql_username = "SELECT UserName from User where UserName ='$username'";
 $search_result = mysqli_query($conn , $sql);   
 $result = mysqli_query($conn, $sql_username);
-$sql_memberid = "SELECT User_ID from member where UserName='UserName'";
+$sql_memberid = "SELECT User_ID from User where UserName='$username'";
 $resultid = mysqli_query($conn,$sql_memberid);
 // Return the number of rows in search result
 $userfound = mysqli_num_rows($search_result);
@@ -20,18 +20,21 @@ $row = mysqli_fetch_assoc($result);
 $rowid = mysqli_fetch_assoc($resultid);
 $name = $row["UserName"];
 $nameid = $rowid["User_ID"];
+echo $name;
+echo $nameid;
 
 if($userfound >= 1) {
     session_start();
     
     $_SESSION['Username'] = $name;
     $_SESSION['ID']= $nameid;
-
+    
     header("Location:dashboard.php");  	// go to main.php
 }
 else {
     // User record is NOT found in the userinfo table
-    header("Location:login.php?fail");  	// go back to login page
+    //header("Location:login.php?fail");  	// go back to login page
+   //echo "cannot login";
 }
 
 

@@ -11,6 +11,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
         /<?php
+        // connection to mysql database
+        session_start();
         if ($_SESSION['ID'] == null) {
             header('Location:login.php');
         }
@@ -78,12 +80,6 @@
                         <div class="card">
                             <div class="card-header">
                                 <?php
-                                // connection to mysql database
-                                $conn = mysqli_connect("localhost", "sqldev", "P@55w0rd", "ICT2103");
-                                if ($conn->connect_error) {
-                                    die("Please contact the admin");
-                                }
-
                                 // query for user location
                                 $userlocationquery = "select location_name from locations where locations.location_id = (select location_id from User where User.User_ID = " . $_SESSION['ID'] . ";";
                                 $result = mysqli_query($conn, $userlocationquery);
@@ -108,6 +104,10 @@
                                 </thead>
                                 <tbody>
                                     <?php
+                                    $conn = mysqli_connect("localhost", "sqldev", "P@55w0rd", "ICT2103");
+                                    if ($conn->connect_error) {
+                                        die("Please contact the admin");
+                                    }
                                     // Return current date from the remote server
                                     date_default_timezone_set("Singapore");
                                     $date = date('Y-m-d\TH:i:s');
