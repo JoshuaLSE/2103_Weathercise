@@ -2,15 +2,13 @@
 <html lang="en">
     <?php // include "connection.php"; ?>
     <?php
-    if (session_status() == PHP_SESSION_NONE) {
-        session_start();
-        echo "STARTING SESSION";
-    }
+    session_start();
+//    if (session_status() == PHP_SESSION_NONE) {
+//        session_start();
+//    }
     if (isset($_SESSION['ID'])) {
-        echo "THIS SESSION'S ID IS" . $_SESSION['ID'];
-    }
-    else{
-        echo " NO SESSION ID SET". $nameid. $name;
+    } else {
+        header('Location:login.php');
     }
     ?>
     <head>
@@ -42,7 +40,7 @@
                                     . "LEFT JOIN food_calories AS b "
                                     . "ON a.Food_ID = b.Food_ID "
                                     . "WHERE timing between date_sub(now(),INTERVAL 1 WEEK) and now()"
-                                    . "AND User_ID = 1;";
+                                    . "AND User_ID = ".$_SESSION["ID"].";";
                             $result = $conn->query($sql);
                             ?>
                             <div class="table-wrapper-scroll-y my-custom-scrollbar">
@@ -133,7 +131,7 @@
                                         $newFoodID = $_POST['foodOptions'];
                                         $newServing = $_POST['servings'];
                                         $newInsert = mysqli_query($conn,
-                                                "INSERT INTO food_history (User_ID, Food_ID, timing, Servings)VALUES (1, " . $newFoodID . ", CURRENT_DATE(), " . $newServing . ");");
+                                                "INSERT INTO food_history (User_ID, Food_ID, timing, Servings)VALUES (".$_SESSION['ID'].", " . $newFoodID . ", CURRENT_DATE(), " . $newServing . ");");
                                         if (!$newInsert) {
                                             echo "Error inserting entry foodID: " . $newFoodID . " error" . $newServing . ": " . $conn->connect_error;
                                         } else {
