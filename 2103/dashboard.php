@@ -10,6 +10,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        /<?php
+        if ($_SESSION['ID'] == null) {
+            header('Location:login.php');
+        }
+        ?>
     </head>
     <body>
         <nav class="navbar navbar-light bg-light p-3">
@@ -78,8 +83,9 @@
                                 if ($conn->connect_error) {
                                     die("Please contact the admin");
                                 }
+
                                 // query for user location
-                                $userlocationquery = "select location_name from locations, User where locations.location_id = 19";
+                                $userlocationquery = "select location_name from locations where locations.location_id = (select location_id from User where User.User_ID = " . $_SESSION['ID'] . ";";
                                 $result = mysqli_query($conn, $userlocationquery);
                                 $userlocation = "";
                                 if (mysqli_num_rows($result) > 0) {
@@ -89,7 +95,7 @@
                                 } else {
                                     echo "error";
                                 }
-                                echo "Recommended Exercise".' ('. $userlocation .')'
+                                echo "Recommended Exercise" . ' (' . $userlocation . ')'
                                 ?>
                             </div>
 
@@ -106,7 +112,7 @@
                                     date_default_timezone_set("Singapore");
                                     $date = date('Y-m-d\TH:i:s');
                                     $urldate = urlencode($date);
-                                    
+
                                     //retreive data from online API (data gov.sg)
                                     $json = file_get_contents('https://api.data.gov.sg/v1/environment/2-hour-weather-forecast?date_time=' . strval($urldate));
                                     $obj = json_decode($json);
@@ -116,14 +122,14 @@
                                     //store current user details
                                     $user_location = '';
                                     $user_forecast = '';
-                                    
+
                                     //using for loop to split array to object after retrieving from online API JSON file
                                     foreach ($items as $value) {
                                         if ($value->forecasts) {
                                             $forecasts = $value->forecasts;
                                         }
                                     }
-                                    
+
                                     // check user current location weather forecast
                                     foreach ($forecasts as $v2) {
                                         //check if its the user location using the location that the user sets $_SESSION["location_id"]
