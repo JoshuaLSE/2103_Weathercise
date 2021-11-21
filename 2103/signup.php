@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="testbox">
-            <form method="post" action="/ICT2103/signup_form.php">
+            <form method="post" action="signup_form.php">
                 <div class="banner">
                     <h1>New Member Registration</h1>
                 </div>
@@ -28,7 +28,11 @@
                     </div>
                     <div class="item">
                         <label for="password">Password<span>*</span></label>
-                        <input id="password" type="password" name="username" required/>
+                        <input id="password" type="password" name="password" required/>
+                    </div>
+                     <div class="item">
+                        <label for="cpassword">Confirm Password:<span>*</span></label>
+                        <input id="cpassword" type="password" name="cpassword" required/>
                     </div>
                     <div class="question">
                         <label>Gender </label>
@@ -41,7 +45,6 @@
                                 <input  type="radio" value="F" id="radio_5" name="gender"/>
                                 <label for="radio_5" class="radio"><span>Female</span></label>
                             </div>
-
                         </div>
                     </div>
                     <div class="item">
@@ -49,19 +52,36 @@
                         <input id="age" type="number"   name="age" required/>
                     </div>
                     <div class="item">
-                        <label for="height">Height<span>*</span></label>
+                        <label for="height">Height (cm)<span>*</span></label>
                         <input id="height" type="number"   name="height" required/>
                     </div>
                     <div class="item">
-                        <label for="weight">Weight<span>*</span></label>
-                        <input id="weight" type="number"   name="weight" required/>
+                        <label for="weight">Weight (kg)<span>*</span></label>
+                        <input id="weight" type="number" name="weight" required/>
                     </div>                    
                 </div>
-                <h2>Terms and Conditions</h2>
-                <input type="checkbox" name="checkbox1">
-                <label>You consent to receive communications from us electronically. We will communicate with you by e-mail or phone. You agree that all agreements, notices, disclosures and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing.</label>
+                <?php
+                                    if(isset($_GET['error']))
+                                    {
+
+                                        if($_GET['error'] == 2)
+                                        {
+                                            echo "<p>Username registered before</p>";
+                                        }
+                                    }
+                                ?>
+                                <?php
+                                    if(isset($_GET['error']))
+                                    {
+
+                                        if($_GET['error'] == 1)
+                                        {
+                                            echo "<p>Incorrect input of Password and Confirm Password</p>";
+                                        }
+                                    }
+                                ?>
                 <div class="btn-block">
-                    <button type="submit" href="/" onclick="displayRadioValue()">Submit</button>
+                    <button type="submit" href="/">Submit</button>
                 </div>
 
             </form>
@@ -69,4 +89,3 @@
 
     </body>
 </html>
-<?php ?>
