@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php // include "connection.php"; ?>
+    <?php
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+        echo "STARTING SESSION";
+    }
+    if (isset($_SESSION['ID'])) {
+        echo "THIS SESSION'S ID IS" . $_SESSION['ID'];
+    }
+    else{
+        echo " NO SESSION ID SET". $nameid. $name;
+    }
+    ?>
     <head>
         <title>Weathercise</title>
         <?php include "head-dashboard.inc.php"; ?>
@@ -61,18 +73,14 @@
                                                 <td><?php echo $rows['Calories'] * $rows['Servings'] ?></td>
                                                 <td>
                                                     <?php
-                                                    $conn_edit = new mysqli($servername, $user, $password, $database);
-                                                    if ($conn_edit->connect_error) {
-                                                        die("Connection failed: " . $conn_edit->connect_error);
-                                                    }
                                                     // If action is to EDIT
                                                     if (isset($_POST['Edit'])) {
                                                         $entryID = $_POST['id'];
                                                         $updateValue = $_POST['newQuantity'];
-                                                        $update = mysqli_query($conn_edit,
+                                                        $update = mysqli_query($conn,
                                                                 "UPDATE food_history SET Servings =" . $updateValue . " WHERE EntryID = " . $entryID);
                                                         if (!$update) {
-                                                            echo "Error updating entry" . $conn_edit->error;
+                                                            echo "Error updating entry" . $conn->error;
                                                         } else {
                                                             header("Location: food.php");
                                                         }
@@ -80,10 +88,10 @@
                                                     // If action is to DELETE
                                                     if (isset($_POST['Delete'])) {
                                                         $entryID = $_POST['id'];
-                                                        $del = mysqli_query($conn_edit,
+                                                        $del = mysqli_query($conn,
                                                                 "DELETE FROM food_history WHERE EntryID = " . $entryID);
                                                         if (!$del) {
-                                                            echo "Error deleting entry" . $conn_edit->error;
+                                                            echo "Error deleting entry" . $conn->error;
                                                         } else {
                                                             header("Location: food.php");
                                                         }
@@ -124,10 +132,10 @@
                                     if (isset($_POST['Submit'])) {
                                         $newFoodID = $_POST['foodOptions'];
                                         $newServing = $_POST['servings'];
-                                        $newInsert = mysqli_query($conn_edit,
+                                        $newInsert = mysqli_query($conn,
                                                 "INSERT INTO food_history (User_ID, Food_ID, timing, Servings)VALUES (1, " . $newFoodID . ", CURRENT_DATE(), " . $newServing . ");");
                                         if (!$newInsert) {
-                                            echo "Error inserting entry foodID: " . $newFoodID . " error: " . $conn_edit->error;
+                                            echo "Error inserting entry foodID: " . $newFoodID . " error" . $newServing . ": " . $conn->connect_error;
                                         } else {
                                             header("Location: food.php");
                                         }
@@ -184,5 +192,5 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     </body>
-<?php $conn->close(); ?>
+    <?php $conn->close(); ?>
 </html>
