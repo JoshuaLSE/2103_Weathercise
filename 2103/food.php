@@ -29,7 +29,8 @@
                             $sql = "SELECT * FROM food_history as a "
                                     . "LEFT JOIN food_calories AS b "
                                     . "ON a.Food_ID = b.Food_ID "
-                                    . "WHERE timing between date_sub(now(),INTERVAL 1 WEEK) and now();";
+                                    . "WHERE timing between date_sub(now(),INTERVAL 1 WEEK) and now()"
+                                    . "AND User_ID = 1;";
                             $result = $conn->query($sql);
                             ?>
                             <div class="table-wrapper-scroll-y my-custom-scrollbar">
