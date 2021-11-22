@@ -41,7 +41,7 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <li><a class="dropdown-item" href="/ICT2103/update_profile.php">Update Profile</a></li>
-                        <li><a class="dropdown-item" href="/ICT2103/signout.php">Sign out</a></li>
+                        <li><a class="dropdown-item" href="/ICT2103/logout.php">Sign out</a></li>
                     </ul>
                 </div>
             </div>
