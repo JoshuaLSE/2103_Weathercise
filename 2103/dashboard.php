@@ -10,16 +10,46 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-        /<?php
-        // connection to mysql database
+
+        <?php
         session_start();
         if ($_SESSION['ID'] == null) {
             header('Location:login.php');
+        } else {
+            // connection to mysql database
+            $conn = mysqli_connect("localhost", "sqldev", "P@55w0rd", "ICT2103");
+            if ($conn->connect_error) {
+                die("Please contact the admin");
+            }
         }
         ?>
     </head>
     <body>
+<<<<<<< HEAD
         <?php include "nav-top.inc.php"; ?>
+=======
+        <nav class="navbar navbar-light bg-light p-3">
+            <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
+                <a class="navbar-brand" href="#">
+                    Weathercise Dashboard
+                </a>
+                <button class="navbar-toggler d-md-none collapsed mb-3" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col-12 col-md-5 col-lg-8 d-flex align-items-center justify-content-md-end mt-3 mt-md-0">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                        Hello, <?php echo $_SESSION['Username'] ?>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="/ICT2103/update_profile.php">Update Profile</a></li>
+                        <li><a class="dropdown-item" href="/ICT2103/logout.php">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+>>>>>>> 7d7c6c22d8a765c853a189171ffba12269d36088
         <div class="container-fluid">
             <div class="row">
                 <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
@@ -60,8 +90,9 @@
                         <div class="card">
                             <div class="card-header">
                                 <?php
+                                
                                 // query for user location
-                                $userlocationquery = "select location_name from locations where locations.location_id = (select location_id from User where User.User_ID = " . $_SESSION['ID'] . ";";
+                                $userlocationquery = "select location_name from locations where locations.location_id = (select location_id from User where User.User_ID = " . $_SESSION["ID"] . ");";
                                 $result = mysqli_query($conn, $userlocationquery);
                                 $userlocation = "";
                                 if (mysqli_num_rows($result) > 0) {
@@ -83,73 +114,69 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php
-                                    $conn = mysqli_connect("localhost", "sqldev", "P@55w0rd", "ICT2103");
-                                    if ($conn->connect_error) {
-                                        die("Please contact the admin");
-                                    }
-                                    // Return current date from the remote server
-                                    date_default_timezone_set("Singapore");
-                                    $date = date('Y-m-d\TH:i:s');
-                                    $urldate = urlencode($date);
+<?php
+// Return current date from the remote server
+date_default_timezone_set("Singapore");
+$date = date('Y-m-d\TH:i:s');
+$urldate = urlencode($date);
 
-                                    //retreive data from online API (data gov.sg)
-                                    $json = file_get_contents('https://api.data.gov.sg/v1/environment/2-hour-weather-forecast?date_time=' . strval($urldate));
-                                    $obj = json_decode($json);
-                                    $items = $obj->items;
-                                    $forecasts = null;
+//retreive data from online API (data gov.sg)
+$json = file_get_contents('https://api.data.gov.sg/v1/environment/2-hour-weather-forecast?date_time=' . strval($urldate));
+$obj = json_decode($json);
+$items = $obj->items;
+$forecasts = null;
 
-                                    //store current user details
-                                    $user_location = '';
-                                    $user_forecast = '';
+//store current user details
+$user_location = '';
+$user_forecast = '';
 
-                                    //using for loop to split array to object after retrieving from online API JSON file
-                                    foreach ($items as $value) {
-                                        if ($value->forecasts) {
-                                            $forecasts = $value->forecasts;
-                                        }
-                                    }
+//using for loop to split array to object after retrieving from online API JSON file
+foreach ($items as $value) {
+    if ($value->forecasts) {
+        $forecasts = $value->forecasts;
+    }
+}
 
-                                    // check user current location weather forecast
-                                    foreach ($forecasts as $v2) {
-                                        //check if its the user location using the location that the user sets $_SESSION["location_id"]
-                                        if ($v2->area == $userlocation) {
-                                            $user_forecast = $v2->forecast;
-                                        }
-                                    }
+// check user current location weather forecast
+foreach ($forecasts as $v2) {
+    //check if its the user location using the location that the user sets $_SESSION["location_id"]
+    if ($v2->area == $userlocation) {
+        $user_forecast = $v2->forecast;
+    }
+}
 
 
 
 
-                                    //check which exercise is recommended for current user
-                                    if (strpos($user_forecast, 'rain') !== false) {
-                                        $sql = "select * from exercise where exercise.Condition = 'Indoor' order by rand() limit 10;";
-                                        $result = mysqli_query($conn, $sql);
-                                        if (mysqli_num_rows($result) > 0) {
-                                            while ($row = mysqli_fetch_array($result)) {
-                                                if ($row != null) {
-                                                    echo "<tr>" . "<td>" . $row["Type"] . "</td>" . "<td>" . $row["intensity"] . "</td>" . "</tr>";
-                                                }
-                                            }
-                                        } else {
-                                            echo "0 results";
-                                        }
-                                    } else {
-                                        $sql = "select * from exercise order by rand() limit 10;";
-                                        $result = mysqli_query($conn, $sql);
-                                        if (mysqli_num_rows($result) > 0) {
-                                            $count = 0;
-                                            while ($row = mysqli_fetch_array($result)) {
-                                                if ($row != null) {
-                                                    echo "<tr>" . "<td>" . $row["Type"] . "</td>" . "<td>" . $row["intensity"] . "</td>" . "</tr>";
-                                                }
-                                            }
-                                        } else {
-                                            echo "0 results";
-                                        }
-                                    }
-                                    mysqli_close($conn);
-                                    ?>
+//check which exercise is recommended for current user
+if (strpos($user_forecast, 'rain') !== false) {
+    $sql = "select * from exercise where exercise.Condition = 'Indoor' order by rand() limit 10;";
+    $result = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        while ($row = mysqli_fetch_array($result)) {
+            if ($row != null) {
+                echo "<tr>" . "<td>" . $row["Type"] . "</td>" . "<td>" . $row["intensity"] . "</td>" . "</tr>";
+            }
+        }
+    } else {
+        echo "0 results";
+    }
+} else {
+    $sql = "select * from exercise order by rand() limit 10;";
+    $result = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        $count = 0;
+        while ($row = mysqli_fetch_array($result)) {
+            if ($row != null) {
+                echo "<tr>" . "<td>" . $row["Type"] . "</td>" . "<td>" . $row["intensity"] . "</td>" . "</tr>";
+            }
+        }
+    } else {
+        echo "0 results";
+    }
+}
+mysqli_close($conn);
+?>
                                 </tbody>
                             </table>
                         </div>
