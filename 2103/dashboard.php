@@ -86,7 +86,6 @@
                         <div class="card">
                             <div class="card-header">
                                 <?php
-                                
                                 // query for user location
                                 $userlocationquery = "select location_name from locations where locations.location_id = (select location_id from User where User.User_ID = " . $_SESSION["ID"] . ");";
                                 $result = mysqli_query($conn, $userlocationquery);
@@ -95,10 +94,10 @@
                                     // output data of each row
                                     $row = mysqli_fetch_assoc($result);
                                     $userlocation = $row['location_name'];
+                                    echo "Recommended Exercise" . ' (' . $userlocation . ')';
                                 } else {
-                                    echo "error";
+                                    echo "Recommended Exercise (Please update location)";
                                 }
-                                echo "Recommended Exercise" . ' (' . $userlocation . ')'
                                 ?>
                             </div>
 
@@ -110,69 +109,72 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-<?php
+                                    <?php
 // Return current date from the remote server
-date_default_timezone_set("Singapore");
-$date = date('Y-m-d\TH:i:s');
-$urldate = urlencode($date);
+                                    date_default_timezone_set("Singapore");
+                                    $date = date('Y-m-d\TH:i:s');
+                                    $urldate = urlencode($date);
 
 //retreive data from online API (data gov.sg)
-$json = file_get_contents('https://api.data.gov.sg/v1/environment/2-hour-weather-forecast?date_time=' . strval($urldate));
-$obj = json_decode($json);
-$items = $obj->items;
-$forecasts = null;
+                                    $json = file_get_contents('https://api.data.gov.sg/v1/environment/2-hour-weather-forecast?date_time=' . strval($urldate));
+                                    $obj = json_decode($json);
+                                    $items = $obj->items;
+                                    $forecasts = null;
 
-//store current user details
-$user_location = '';
-$user_forecast = '';
+//store current user details                                    $user_location = '';
+                                    $user_forecast = '';
 
 //using for loop to split array to object after retrieving from online API JSON file
-foreach ($items as $value) {
-    if ($value->forecasts) {
-        $forecasts = $value->forecasts;
-    }
-}
+                                    foreach ($items as $value) {
+                                        if ($value->forecasts) {
+                                            $forecasts = $value->forecasts;
+                                        }
+                                    }
 
 // check user current location weather forecast
-foreach ($forecasts as $v2) {
-    //check if its the user location using the location that the user sets $_SESSION["location_id"]
-    if ($v2->area == $userlocation) {
-        $user_forecast = $v2->forecast;
-    }
-}
+                                    foreach ($forecasts as $v2) {
+                                        //check if its the user location using the location that the user sets $_SESSION["location_id"]
+                                        if ($v2->area == $userlocation) {
+                                            $user_forecast = $v2->forecast;
+                                        }
+                                    }
 
 
 
-
+                                    if ($userlocation != "") {
 //check which exercise is recommended for current user
-if (strpos($user_forecast, 'rain') !== false) {
-    $sql = "select * from exercise where exercise.Condition = 'Indoor' order by rand() limit 10;";
-    $result = mysqli_query($conn, $sql);
-    if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_array($result)) {
-            if ($row != null) {
-                echo "<tr>" . "<td>" . $row["Type"] . "</td>" . "<td>" . $row["intensity"] . "</td>" . "</tr>";
-            }
-        }
-    } else {
-        echo "0 results";
-    }
-} else {
-    $sql = "select * from exercise order by rand() limit 10;";
-    $result = mysqli_query($conn, $sql);
-    if (mysqli_num_rows($result) > 0) {
-        $count = 0;
-        while ($row = mysqli_fetch_array($result)) {
-            if ($row != null) {
-                echo "<tr>" . "<td>" . $row["Type"] . "</td>" . "<td>" . $row["intensity"] . "</td>" . "</tr>";
-            }
-        }
-    } else {
-        echo "0 results";
-    }
-}
-mysqli_close($conn);
-?>
+                                        if (strpos($user_forecast, 'rain') !== false) {
+                                            $sql = "select * from exercise where exercise.Condition = 'Indoor' order by rand() limit 10;";
+                                            $result = mysqli_query($conn, $sql);
+                                            if (mysqli_num_rows($result) > 0) {
+                                                while ($row = mysqli_fetch_array($result)) {
+                                                    if ($row != null) {
+                                                        echo "<tr>" . "<td>" . $row["Type"] . "</td>" . "<td>" . $row["intensity"] . "</td>" . "</tr>";
+                                                    }
+                                                }
+                                            } else {
+                                                echo "0 results";
+                                            }
+                                        } else {
+                                            $sql = "select * from exercise order by rand() limit 10;";
+                                            $result = mysqli_query($conn, $sql);
+                                            if (mysqli_num_rows($result) > 0) {
+                                                $count = 0;
+                                                while ($row = mysqli_fetch_array($result)) {
+                                                    if ($row != null) {
+                                                        echo "<tr>" . "<td>" . $row["Type"] . "</td>" . "<td>" . $row["intensity"] . "</td>" . "</tr>";
+                                                    }
+                                                }
+                                            } else {
+                                                echo "0 results";
+                                            }
+                                        }
+                                    } else {
+                                        echo "";
+                                    }
+                                    
+                                    mysqli_close($conn);
+                                    ?>
                                 </tbody>
                             </table>
                         </div>
