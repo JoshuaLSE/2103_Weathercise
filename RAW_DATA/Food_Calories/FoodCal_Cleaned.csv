@@ -1,563 +1,566 @@
-Food,Serving,Serving (g),Calories,Calories/gram
-Artichoke,1 artichoke,128.0,60,0.469
-Arugula,1 leaf,2.0,1,0.500
-Asparagus,1 spear,12.0,2,0.167
-Aubergine,1 aubergine,458.0,115,0.251
-Beetroot,1 beet,82.0,35,0.427
-Bell Pepper,1 pepper,73.0,15,0.205
-Black Olives,1 olive,2.7,2,0.741
-Broccoli,1 bunch,608.0,207,0.340
-Brussels Sprouts,1 sprout,19.0,8,0.421
-Cabbage,1 head,908.0,227,0.250
-Capsicum,1 pepper,45.0,12,0.267
-Carrot,1 carrot,61.0,25,0.410
-Cauliflower,1 floweret,13.0,3,0.231
-Celery,1 stalk,40.0,6,0.150
-Chard,1 leaf,48.0,9,0.188
-Cherry Tomato,1 cherry tomato,20.0,20,1.000
-Chicory,1 head,53.0,38,0.717
-Chinese Cabbage,1 head,840.0,134,0.160
-Chives,"1 tbsp, chopped",3.0,1,0.333
-Collard Greens,"1 cup, raw",36.0,12,0.333
-Corn,1 cup,154.0,562,3.649
-Courgette,1 courgette,196.0,33,0.168
-Creamed Spinach,1 cup,200.0,148,0.740
-Cucumber,1 cucumber,410.0,66,0.161
-Eggplant,1 eggplant,458.0,115,0.251
-Endive,1 head,513.0,87,0.170
-Fennel,1 bulb,234.0,73,0.312
-Garlic,1 clove,3.0,4,1.333
-Gherkin,1 gherkin,65.0,9,0.138
-Gourd,1 gourd,771.0,108,0.140
-Green Beans,1 cup,110.0,34,0.309
-Green Olives,1 olive,2.7,2,0.741
-Green Onion,1 green onion,15.0,5,0.333
-Horseradish,1 tbsp,15.0,7,0.467
-Kale,"1 cup, chopped",67.0,33,0.493
-Kohlrabi,1 kohlrabi,400.0,108,0.270
-Kumara,1 kumara,130.0,112,0.862
-Leek,1 leek,89.0,54,0.607
-Lettuce,1 head,600.0,90,0.150
-Mushrooms,1 mushroom,5.4,1,0.185
-Mustard Greens,"1 cup, chopped",56.0,15,0.268
-Nori,1 sheet,2.6,1,0.385
-Okra,1 pod,12.0,4,0.333
-Olives,1 olive,2.7,2,0.741
-Onion,1 onion,85.0,34,0.400
-Parsnips,1 parsnip,170.0,128,0.753
-Peas,1 cup,98.0,79,0.806
-Pepper,1 pepper,75.0,20,0.267
-Potato,1 potato,213.0,164,0.770
-Pumpkin,1 pumpkin,196.0,51,0.260
-Radishes,1 radish,4.5,1,0.222
-Red Cabbage,1 leaf,22.0,7,0.318
-Rutabaga,1 rutabaga,386.0,147,0.381
-Shallots,1 shallot,25.0,18,0.720
-Spinach,1 bunch,340.0,78,0.229
-Squash,1 squash,196.0,88,0.449
-Sweet Potato,1 potato,130.0,112,0.862
-Tomato,1 tomato,111.0,20,0.180
-Turnip Greens,1 turnip green,170.0,34,0.200
-Turnips,1 turnip,122.0,34,0.279
-Wasabi,1 root,169.0,184,1.089
-Winter Squash,1 squash,431.0,147,0.341
-Zucchini,1 zucchini,196.0,33,0.168
-Acai,1 oz.,28.35,20,0.705
-Apple,1 apple,182.0,95,0.522
-Applesauce,1 cup,246.0,167,0.679
-Apricot,1 apricot,35.0,17,0.486
-Avocado,1 avocado,200.0,320,1.600
-Banana,1 banana,125.0,111,0.888
-Blackberries,1 cup,144.0,62,0.431
-Blood Oranges,1 serving,140.0,70,0.500
-Blueberries,1 cup,148.0,84,0.568
-Cantaloupe,1 wedge,69.0,23,0.333
-Cherries,1 cherry,8.0,4,0.500
-Clementine,1 clementine,74.0,35,0.473
-Cranberries,1 cup,100.0,46,0.460
-Currants,1 cup,112.0,63,0.562
-Custard Apple,1 custard apple,135.0,136,1.007
-Dates,1 date,7.1,20,2.817
-Figs,1 fig,50.0,37,0.740
-Fruit salad,1 cup,249.0,125,0.502
-Grapes,1 cup,151.0,104,0.689
-Greengage,1 fruit,5.0,2,0.400
-Guava,1 guava,55.0,37,0.673
-Jackfruit,1 cup,151.0,143,0.947
-Jujube,1 oz.,28.35,22,0.776
-Kiwi,1 liwi,183.0,112,0.612
-Lemon,1 lemon,58.0,17,0.293
-Lime,1 lime,67.0,20,0.299
-Lychees,1 lychee,10.0,7,0.700
-Mandarin Oranges,1 mandarin orange,88.0,47,0.534
-Mango,1 mango,336.0,202,0.601
-Minneola,1 minneola,109.0,70,0.642
-Mulberries,1 cup,140.0,60,0.429
-Nectarine,1 nectarine,150.0,66,0.440
-Olives,1 olive,2.7,2,0.741
-Orange,1 orange,131.0,62,0.473
-Papaya,1 fruit,500.0,215,0.430
-Passion Fruit,1 passoin fruit,18.0,17,0.944
-Peach,1 peach,150.0,59,0.393
-Pear,1 pear,178.0,101,0.567
-Persimmon,1 fruit,25.0,32,1.280
-Physalis,1 berry,5.0,2,0.400
-Pineapple,1 pineapple,905.0,453,0.501
-Plantains,1 plantain,179.0,218,1.218
-Plum,1 plum,66.0,30,0.455
-Pomegranate,1 pomegranate,282.0,234,0.830
-Quince,1 quince,92.0,52,0.565
-Raisins,1 cup,145.0,434,2.993
-Rambutan,1 rambutan,9.0,7,0.778
-Raspberries,1 cup,123.0,64,0.520
-Rhubarb,1 stalk,51.0,11,0.216
-Starfruit,1 star fruit,91.0,28,0.308
-Strawberries,1 cup,152.0,49,0.322
-Tamarind,1 tamarind,2.0,5,2.500
-Tangerine,1 tangerine,88.0,47,0.534
-Watermelon,1 wedge,286.0,86,0.301
-Baby Back Ribs,1 serving,139.0,360,2.590
-Bacon and Eggs,1 serving,214.0,539,2.519
-Baked Beans,1 cup,260.0,244,0.938
-BBQ Ribs,1 rib,141.0,360,2.553
-Beef Stew,1 cup,196.0,186,0.949
-Biryani,1 cup,275.0,484,1.760
-Black Pudding,1 pudding,40.0,101,2.525
-Black Rice,1/2 cup,100.0,323,3.230
-BLT,1 item,240.0,593,2.471
-Brown Rice,1 cup,185.0,670,3.622
-Burrito,1 burrito,200.0,326,1.630
-Butter Chicken,1 tray,350.0,490,1.400
-California Roll,1 roll,35.0,33,0.943
-Chicken Caesar Salad,1 salad,309.0,392,1.269
-Chicken Fried Steak,1 steak,280.0,423,1.511
-Chicken Marsala,1 serving,2301.0,2209,0.960
-Chicken Parmesan,1 piece,227.0,250,1.101
-Chicken Pot Pie,1 pie,302.0,673,2.228
-Chicken Tikka Masala,1 serving,241.0,195,0.809
-Chili con Carne,1 cup,253.0,266,1.051
-Chimichanga,1 item,180.0,418,2.322
-Cobb Salad,1 serving,536.0,632,1.179
-Collard Greens,1 cup,45.0,13,0.289
-Corn Dog,1 item,175.0,438,2.503
-Corned Beef Hash,1 can,213.0,349,1.638
-Cottage Pie,1 pie,376.0,523,1.391
-Dal,1/2 cup,92.0,304,3.304
-Deviled Eggs,1/2 egg,31.0,62,2.000
-Dim Sum,1 piece,19.0,37,1.947
-Dosa,1 serving,435.0,287,0.660
-Enchiladas,1 enchilada,192.0,323,1.682
-Fajita,1 serving,248.0,290,1.169
-Fish and Chips,1 serving,300.0,585,1.950
-Fried Rice,1 serving,356.0,662,1.860
-Fried Shrimp,1 shrimp,27.0,75,2.778
-Grilled Cheese Sandwich,1 sandwich,136.0,392,2.882
-Ham and Cheese Sandwich,1 sandwich,146.0,352,2.411
-Hummus,1 cup,246.0,435,1.768
-Jambalaya,1 cup,250.0,250,1.000
-Kebab,1 kebab,360.0,774,2.150
-Lasagne,1 serving,215.0,284,1.321
-Mac and Cheese,1 serving,189.0,699,3.698
-Macaroni and Cheese,1 serving,189.0,699,3.698
-Mashed Potatoes,1 cup,210.0,174,0.829
-Meat Pie,1 pie,120.0,290,2.417
-Meatloaf,1 loaf,284.0,721,2.539
-Naan,1 bread,84.0,260,3.095
-Orange Chicken,1 serving,162.0,420,2.593
-Pad Thai,1 cup,250.0,375,1.500
-Paella,1/2 package,128.0,200,1.562
-Paratha,1 paratha,80.0,260,3.250
-Pea Soup,1 cup,253.0,190,0.751
-Peanut Butter Sandwich,1 sandwich,49.0,200,4.082
-Peking Duck,1/2 duck,178.0,401,2.253
-Philly Cheese Steak,1 sandwich,120.0,300,2.500
-Pizza,1 slice,102.0,272,2.667
-Pork Chop,1 chop,131.0,295,2.252
-Potato Salad,1/3 cup,95.0,136,1.432
-Pulled Pork Sandwich,1 sandwich,261.0,551,2.111
-Ramen,"1 package, dry",85.0,380,4.471
-Ravioli,5 ravioli,66.0,134,2.030
-Reuben Sandwich,1 sandwich,308.0,641,2.081
-Roast Beef,1 slice,21.0,23,1.095
-Roast Dinner,1 slice,121.0,240,1.983
-Samosa,1 samosa,50.0,107,2.140
-Sausage Roll,1 roll,103.0,361,3.505
-Sausage Rolls,1 roll,34.0,101,2.971
-Shepherds Pie,1 pie,227.0,159,0.700
-Shrimp Cocktail,1 oz.,28.0,130,4.643
-Sloppy Joe,1/2 cup,142.0,101,0.711
-Sloppy Joes,1 bun,258.0,397,1.539
-Spaghetti Bolognese,1 serving,283.0,374,1.322
-Spring Roll,1 roll,140.0,350,2.500
-Spring Rolls,1 roll,140.0,350,2.500
-Taco,1 taco,98.0,213,2.173
-Tandoori Chicken,1 serving,175.0,198,1.131
-Yorkshire Pudding,1 pudding,15.0,83,5.533
-Amaranth,1 cup,193.0,716,3.710
-Barley,1 cup,157.0,556,3.541
-Barley Groats,1 cup,31.0,31,1.000
-Brown Rice,1 cup,195.0,757,3.882
-Buckwheat,1 cup,170.0,583,3.429
-Buckwheat Groats,1 cup,164.0,567,3.457
-Corn Waffles,1 waffle,40.0,110,2.750
-Cornmeal,1 cup,122.0,442,3.623
-Cornstarch,1 cup,128.0,488,3.812
-Couscous,1 cup,173.0,650,3.757
-Cracker,1 cracker,7.0,35,5.000
-Durum Wheat Semolina,1 tbsp,30.0,119,3.967
-Flaxseed,1 cup,168.0,897,5.339
-Freekeh,1 cup,160.0,832,5.200
-Gluten,1 oz.,28.0,104,3.714
-Grissini,1 grissini,5.0,20,4.000
-Kamut,1 cup,186.0,627,3.371
-Millet,1 cup,128.0,484,3.781
-Millet Flour,1 cup,140.0,521,3.721
-Millet Gruel,1 cup,174.0,80,0.460
-Oat Bran,1 cup,94.0,231,2.457
-Pearl Barley,1 cup,157.0,553,3.522
-Polenta,1 cup,150.0,549,3.660
-Prawn Crackers,1 cracker,3.0,16,5.333
-Pretzel Sticks,20 sticks,12.0,46,3.833
-Quinoa,1 cup,170.0,626,3.682
-Rusk,1 rusk,10.0,41,4.100
-Rye Bran,1 cup,150.0,422,2.813
-Sago,1 oz.,28.0,99,3.536
-Savoury Biscuits,40 grams,40.0,139,3.475
-Shortbread,1 cookie,19.0,95,5.000
-Spelt,1 cup,174.0,588,3.379
-Spelt Bran,1 cup,160.0,283,1.769
-Spelt Semolina,1 cup,167.0,601,3.599
-Sunflower Seeds,1 cup,140.0,818,5.843
-Tortilla,1 tortilla,197.0,467,2.371
-Tortilla Chips,20 chips,32.0,160,5.000
-Wheat Bran,1 cup,58.0,125,2.155
-Wheat Germ,1 cup,113.0,432,3.823
-Wheat Gluten,1 tsp,3.0,10,3.333
-Wheat Semolina,1 cup,167.0,601,3.599
-Wheat Starch,1 cup,110.0,386,3.509
-Whole Grain Wheat,1 cup,120.0,407,3.392
-Wholegrain Oat,1 cup,80.0,300,3.750
-Almond Oil,1 tbsp,14.0,123,8.786
-Apricot Kernel Oil,1 tbsp,14.0,124,8.857
-Argan Oil,1 tbsp,14.0,125,8.929
-Avocado Oil,1 tbsp,14.0,120,8.571
-Babassu Oil,1 tbsp,14.0,124,8.857
-Canola Oil,1 tbsp,14.0,124,8.857
-Coconut Oil,1 tbsp,14.0,120,8.571
-Corn Oil,1 tbsp,15.0,120,8.000
-Cottonseed Oil,1 tbsp,14.0,123,8.786
-Flaxseed Oil,1 tbsp,14.0,124,8.857
-Grape Seed Oil,1 tbsp,14.0,124,8.857
-Hazelnut Oil,1 tbsp,14.0,124,8.857
-Linseed Oil,1 tbsp,14.0,117,8.357
-Menhaden Oil,1 tbsp,14.0,128,9.143
-Mustard Oil,1 tbsp,14.0,124,8.857
-Oat Oil,1 tbsp,14.0,124,8.857
-Olive Oil,1 tbsp,15.0,120,8.000
-Palm Kernel Oil,1 tbsp,14.0,123,8.786
-Palm Oil,1 tbsp,14.0,123,8.786
-Peanut Oil,1 tbsp,14.0,120,8.571
-Poppy Seed Oil,1 tbsp,14.0,124,8.857
-Pumpkin Seed Oil,1 tbsp,14.0,123,8.786
-Rice Bran Oil,1 tbsp,14.0,124,8.857
-Safflower Oil,1 tbsp,14.0,120,8.571
-Salmon Oil,1 tbsp,14.0,128,9.143
-Sesame Oil,1 tbsp,14.0,124,8.857
-Shea Oil,1 tbsp,14.0,124,8.857
-Soy Oil,1 tbsp,14.0,123,8.786
-Sunflower Oil,1 tbsp,14.0,124,8.857
-Tomato Seed Oil,1 tbsp,14.0,124,8.857
-Vegetable Oil,1 tbsp,15.0,120,8.000
-Walnut Oil,1 tbsp,14.0,124,8.857
-Wheat Germ Oil,1 tbsp,14.0,130,9.286
-Alphabet Soup,1 cup,248.0,62,0.250
-Bean Stew,1 cup,252.0,335,1.329
-Beef Bouillon,1 cup,240.0,7,0.029
-Beef Noodle Soup,1 cup,244.0,83,0.340
-Beef Soup,1 cup,213.0,70,0.329
-Bouillon,1 cup,244.0,39,0.160
-Broccoli Cheese Soup,1 can,303.0,264,0.871
-Broccoli Soup,1 cup,237.0,206,0.869
-Cabbage Soup,1 cup,245.0,69,0.282
-Carrot Ginger Soup,1 serving,381.0,95,0.249
-Carrot Soup,1 serving,381.0,95,0.249
-Chicken Bouillon,1 cup,241.0,10,0.041
-Chicken Broth,1 cup,244.0,39,0.160
-Chicken Gumbo Soup,1 cup,244.0,56,0.230
-Chicken Noodle Soup,1 cup,248.0,62,0.250
-Chicken Stock,1 cup,244.0,39,0.160
-Chicken Vegetable Soup,1 cup,248.0,77,0.310
-Chicken with Rice Soup,1 cup,243.0,58,0.239
-Cream of Asparagus Soup,1 cup,244.0,85,0.348
-Cream of Broccoli Soup,1 serving,310.0,140,0.452
-Cream of Celery Soup,1 cup,248.0,92,0.371
-Cream of Chicken Soup,1 cup,244.0,117,0.480
-Cream of Mushroom Soup,1 cup,248.0,97,0.391
-Cream of Onion Soup,1 cup,244.0,107,0.439
-Cream of Potato Soup,1 cup,244.0,73,0.299
-Creamy Chicken Noodle Soup,1 cup,245.0,56,0.229
-French Onion Soup,1 cup,243.0,56,0.230
-Golden Mushroom Soup,1 cup,248.0,161,0.649
-Goulash,1 serving,187.0,1887,10.091
-Instant Ramen,1 package,85.0,371,4.365
-Lentil Soup,1 cup,248.0,139,0.560
-Lobster Bisque Soup,1 cup,248.0,248,1.000
-Meatball Soup,1 cup,245.0,120,0.490
-Minestrone,1 cup,241.0,82,0.340
-Mushroom Soup,1 cup,244.0,85,0.348
-Noodle Soup,1 cup,244.0,83,0.340
-Onion Soup,1 cup,243.0,56,0.230
-Oxtail Soup,1 cup,244.0,68,0.279
-Pea Soup,1 cup,253.0,190,0.751
-Potato Soup,1 serving,240.0,192,0.800
-Pumpkin Soup,1 cup,245.0,71,0.290
-Ramen,1 package,85.0,371,4.365
-Scotch Broth,1 cup,241.0,80,0.332
-Succotash,1 cup,192.0,221,1.151
-Thai Soup,1 cup,245.0,147,0.600
-Tomato Rice Soup,1 cup,247.0,116,0.470
-Tomato Soup,1 cup,248.0,74,0.298
-Vegetable Beef Soup,1 cup,244.0,76,0.311
-Vegetable Broth,1 cup,235.0,12,0.051
-Vegetable Soup,1 cup,241.0,67,0.278
-Vegetable Stock,1 cup,235.0,12,0.051
-Wedding Soup,1 cup,245.0,130,0.531
-Baskin-Robbins,1 scoop,71.0,170,2.394
-Ben and Jerry’s,1 scoop,92.0,210,2.283
-Butter Pecan Ice Cream,1 scoop,113.0,280,2.478
-Carvel,1 cup,212.0,449,2.118
-Chocolate Chip Ice Cream,1 scoop,72.0,155,2.153
-Chocolate Ice Cream,1 scoop,72.0,156,2.167
-Ciao Bella,1 cup,220.0,240,1.091
-Coffee Ice Cream,1 scoop,72.0,170,2.361
-Cold Stone Creamery,1 scoop,142.0,329,2.317
-Cookie Dough Ice Cream,1/2 cup,65.0,130,2.000
-Crunchie McFlurry,1 mcflurry,183.0,318,1.738
-Dairy Milk McFlurry,1 mcflurry,183.0,340,1.858
-Dippin Dots,1 cup,170.0,381,2.241
-Double Rainbow,1 scoop,72.0,185,2.569
-Drumsticks,1 cone,141.0,360,2.553
-French Vanilla Ice Cream,1 scoop,72.0,145,2.014
-Friendly’s,1 scoop,66.0,140,2.121
-Healthy Choice,1 bar,64.0,80,1.250
-Hot Fudge Sundae,1 sundae,179.0,333,1.860
-Ice Cream Sandwich,1 bar,112.0,265,2.366
-Ice Cream Sundae,1 sundae,178.0,253,1.421
-Ice Milk,1 scoop,103.0,164,1.592
-Magnolia,1 scoop,72.0,166,2.306
-Magnum,1 magnum,86.0,258,3.000
-Magnum Almond,1 magnum,86.0,271,3.151
-Magnum Double Caramel,1 magnum,86.0,305,3.547
-Magnum Double Chocolate,1 magnum,86.0,327,3.802
-Magnum Gold,1 magnum,85.0,290,3.412
-Magnum White,1 magnum,86.0,255,2.965
-McFlurry,1 mcflurry,134.0,205,1.530
-McFlurry Oreo,1 mcflurry,183.0,340,1.858
-Mini Milk,1 mini milk,25.0,30,1.200
-Mint Chocolate Chip Ice Cream,1 scoop,72.0,172,2.389
-Rocky Road Ice Cream,1 scoop,113.0,290,2.566
-Schwan’s,1 scoop,72.0,177,2.458
-Smarties McFlurry,1 mcflurry,202.0,400,1.980
-Snickers Ice Cream,1 bar,50.0,180,3.600
-Soft Serve,1 cup,86.0,191,2.221
-Solero,1 solero,75.0,75,1.000
-Strawberry Ice Cream,1 scoop,72.0,170,2.361
-Strawberry Sundae,1 sundae,178.0,281,1.579
-Sundae,1 scoop,72.0,155,2.153
-Turkey Hill,1 sandwich,70.0,190,2.714
-Vanilla Cone,1 cone,142.0,230,1.620
-Vanilla Ice Cream,1 scoop,72.0,145,2.014
-Cannelloni,2 oz.,56.0,82,1.464
-Capellini,2 oz.,56.0,198,3.536
-Cappelletti,2 oz.,56.0,92,1.643
-Cellophane Noodles,1 cup,140.0,491,3.507
-Cheese Tortellini,1 cup,113.0,329,2.912
-Dampfnudel,1 dampfnudel,85.0,233,2.741
-Dumpling Dough,2 oz.,56.0,55,0.982
-Durum Wheat Semolina,2 oz.,56.0,222,3.964
-Egg Noodles,1 cup,38.0,146,3.842
-Farfalle,2 oz.,56.0,200,3.571
-Fettuccine,2 oz.,56.0,198,3.536
-Fusilli,2 oz.,56.0,197,3.518
-Glass Noodles,2 oz.,56.0,108,1.929
-Lasagne Sheets,1 sheet,21.0,57,2.714
-Linguine,2 oz.,56.0,200,3.571
-Low Carb Pasta,2 oz.,56.0,158,2.821
-Macaroni,1 cup,114.0,422,3.702
-Manicotti,2 oz.,56.0,200,3.571
-Mostaccioli,2 oz.,56.0,103,1.839
-Orecchiette,2 oz.,56.0,207,3.696
-Orzo,2 oz.,56.0,200,3.571
-Penne,2 oz.,56.0,197,3.518
-Penne Rigate,2 oz.,56.0,207,3.696
-Pierogi,3 pierogi,100.0,200,2.000
-Ravioli,2 oz.,56.0,43,0.768
-Rigatoni,2 oz.,56.0,198,3.536
-Rotini,2 oz.,56.0,198,3.536
-Shells,1 cup,85.0,300,3.529
-Shirataki Noodles,2 oz.,56.0,10,0.179
-Soy Noodles,2 oz.,56.0,121,2.161
-Spaetzle,2 oz.,56.0,206,3.679
-Spaghetti,2 oz.,56.0,207,3.696
-Spinach Tortellini,1 cup,102.0,320,3.137
-Spirelli,2 oz.,56.0,206,3.679
-Tagliatelle,2 oz.,56.0,207,3.696
-Tortellini,1 cup,113.0,329,2.912
-Vermicelli,2 oz.,56.0,206,3.679
-Whole Grain Noodles,2 oz.,56.0,194,3.464
-Whole Grain Spaghetti,2 oz.,56.0,197,3.518
-Ziti,2 oz.,56.0,197,3.518
-BBQ Chicken Pizza,1 slice,132.0,309,2.341
-BBQ Pizza,1 slice,140.0,314,2.243
-Beef Pizza,1 slice,235.0,714,3.038
-Bianca Pizza,1 slice,187.0,460,2.460
-Buffalo Chicken Pizza,1 slice,238.0,600,2.521
-Calabrese Pizza,1 slice,108.0,254,2.352
-Calzone,1 calzone,364.0,841,2.310
-Capricciosa Pizza,1 slice,74.0,192,2.595
-Cheese Pizza,1 slice,63.0,168,2.667
-Chicken Pizza,1 slice,132.0,309,2.341
-Deep Dish Pizza,1 slice,118.0,313,2.653
-Dominos Philly Cheese Steak Pizza,1 slice,159.0,356,2.239
-Four Cheese Pizza,1 slice,113.0,250,2.212
-Goat Cheese Pizza,1 slice,63.0,138,2.190
-Grilled Pizza,1 slice,124.0,280,2.258
-Hawaiian Pizza,1 slice,134.0,154,1.149
-Margherita Pizza,1 slice,63.0,173,2.746
-Mozzarella Pizza,1 slice,62.0,154,2.484
-Mushroom Pizza,1 slice,288.0,611,2.122
-Napoli Pizza,1 slice,123.0,248,2.016
-New York Style Pizza,1 slice,103.0,174,1.689
-Pepperoni Pizza,1 slice,71.0,181,2.549
-Pizza Dough,2 oz.,57.0,130,2.281
-Pizza Hut Stuffed Crust Pizza,1 slice,149.0,380,2.550
-Pizza Hut Supreme Pizza,1 slice,123.0,305,2.480
-Pizza Rolls,1 roll,14.0,35,2.500
-Quattro Formaggi Pizza,1 slice,133.0,330,2.481
-Red Pepper Pizza,1 slice,86.0,165,1.919
-Salami Pizza,1 slice,71.0,181,2.549
-Sausage Pizza,1 slice,72.0,177,2.458
-Seafood Pizza,1 slice,76.0,186,2.447
-Shrimp Pizza,1 slice,91.0,190,2.088
-Sicilian Pizza,1 slice,133.0,321,2.414
-Spinach Feta Pizza,1 slice,62.0,150,2.419
-Spinach Pizza,1 slice,62.0,145,2.339
-Stuffed Crust Pizza,1 slice,149.0,380,2.550
-Tarte Flambée,1 square,56.0,142,2.536
-Thin Crust Pizza,1 slice,60.0,157,2.617
-Tuna Pizza,1 slice,125.0,318,2.544
-Vegetable Pizza,1 slice,156.0,399,2.558
-Vegetarian Pizza,1 slice,156.0,399,2.558
-Veggie Pizza,1 slice,114.0,263,2.307
-White Pizza,1 slice,232.0,571,2.461
-Acerola,1 acerola,4.8,1,0.208
-Asian Pear,1 pear,178.0,75,0.421
-Avocado,1 avocado,200.0,320,1.600
-Banana,1 banana,125.0,111,0.888
-Breadfruit,1/4 breadfruit,96.0,99,1.031
-Cantaloupe Melon,1 wedge,69.0,23,0.333
-Casaba Melon,1 wedge,125.0,35,0.280
-Cherimoya,1 cherimoya,235.0,176,0.749
-Dragon Fruit,1 dragonfruit,200.0,120,0.600
-Durian,1 durian,602.0,885,1.470
-Feijoa,1 feijoa,42.0,23,0.548
-Galia Melon,1 melon,130.0,30,0.231
-Grapefruit,1/2 grapefruit,123.0,52,0.423
-Guava,1 guava,55.0,37,0.673
-Honeydew,1 wedge,125.0,45,0.360
-Jackfruit,1 cup,151.0,143,0.947
-Kiwi,1 kiwi,183.0,112,0.612
-Kumquat,1 kumquat,19.0,13,0.684
-Lychee,1 lychee,10.0,7,0.700
-Mandarin Oranges,1 madarin orange,90.0,48,0.533
-Mango,1 mango,336.0,202,0.601
-Mangosteen,1 serving,80.0,58,0.725
-Maracuya,1 maracuya,18.0,17,0.944
-Maraschino Cherries,1 cherry,5.0,8,1.600
-Muskmelon,1 wedge,69.0,23,0.333
-Noni,1 oz.,28.4,15,0.528
-Passion Fruit,1 passion fruit,18.0,17,0.944
-Pineapple,1 pineapple,905.0,453,0.501
-Pink Grapefruit,1/2 grapefruit,123.0,52,0.423
-Plantain,1 plantain,179.0,218,1.218
-Pomegranate,1 pomegranate,282.0,234,0.830
-Pomelo,1 pomelo,609.0,231,0.379
-Prickly Pear,"1 pad, peeled",19.0,8,0.421
-Rambutan,1 rambutan,9.0,7,0.778
-Sapodilla,1 sapodilla,170.0,141,0.829
-Soursop Fruit,1 soursop fruit,625.0,413,0.661
-Star Fruit,1 starfruit,91.0,28,0.308
-Tamarind,1 tamarind,2.0,5,2.500
-Watermelon,1 wedge,286.0,86,0.301
-Arby’s Grand Turkey Club,1 sandwich,233.0,489,2.099
-Arby’s Reuben,1 sandwich,308.0,641,2.081
-Arby’s Roast Beef Classic,1 burger,154.0,360,2.338
-Arby’s Roast Beef Max,1 burger,154.0,360,2.338
-BBQ Rib,1 rib,67.0,142,2.119
-Bean Burrito,1 burrito,190.0,380,2.000
-Big N’ Tasty,1 sandwich,232.0,517,2.228
-Bratwurst,1 piece,85.0,283,3.329
-Burger King Angry Whopper,1 burger,290.0,740,2.552
-Burger King Double Whopper,1 burger,374.0,894,2.390
-Burger King Double Whopper with Cheese,1 sandwich,399.0,994,2.491
-Burger King Original Chicken Sandwich,1 sandwich,219.0,659,3.009
-Burger King Premium Alaskan Fish Sandwich,1 burger,228.0,591,2.592
-Burger King Triple Whopper,1 burger,547.0,1471,2.689
-Burger King Whopper,1 burger,291.0,672,2.309
-Burger King Whopper Jr.,1 burger,148.0,346,2.338
-Burger King Whopper with Cheese,1 burger,315.0,759,2.410
-Cheeseburger,1 burger,156.0,410,2.628
-Chicken Breast,1 piece,71.0,116,1.634
-Chicken Fajita,1 sandwich,222.0,326,1.468
-Chicken McNuggets,1 nugget,16.0,48,3.000
-Chicken Nuggets,1 piece,20.0,59,2.950
-Chicken Pizziola,1 sandwich,320.0,451,1.409
-Chicken Sandwich,1 sandwich,170.0,410,2.412
-Chicken Teriyaki Sandwich,1 sandwich,266.0,367,1.380
-Chicken Wings,1 piece,29.0,94,3.241
-Chop Suey,1 serving,340.0,585,1.721
-Curly Fries,1 serving,128.0,398,3.109
-Double Cheeseburger,1 burger,155.0,414,2.671
-Egg Roll,1 roll,80.0,200,2.500
-Falafel,1 patty,17.0,57,3.353
-Filet-o-Fish,1 sandwich,142.0,400,2.817
-Fish and Chips,1 serving,300.0,585,1.950
-Fish Sandwich,1 sandwich,158.0,431,2.728
-French Fries,1 serving,71.0,222,3.127
-Grilled Chicken Salad,1 salad,305.0,268,0.879
-Ham Sandwich,1 sandwich,146.0,352,2.411
-Hamburger,1 sandwich,110.0,279,2.536
-Hot Dog,1 hot dog,116.0,312,2.690
-Italian BMT,1 sandwich,224.0,410,1.830
-Lasagna,1 piece,130.0,172,1.323
-McDonald’s Big Mac,1 burger,219.0,561,2.562
-McDonald’s Cheeseburger,1 sandwich,114.0,300,2.632
-McDonald’s Chicken Nuggets,1 nugget,16.0,48,3.000
-McDonald’s Double Cheeseburger,1 burger,155.0,437,2.819
-McDonald’s Filet-o-Fish,1 sandwich,142.0,391,2.754
-McDonald’s McChicken,1 burger,143.0,359,2.510
-McDonald’s McDouble,1 burger,160.0,403,2.519
-McDonald’s McMuffi Egg,1 burger,129.0,290,2.248
-McDonald’s McRib,1 sandwich,170.0,451,2.653
-McDonald’s Mighty Wings,1 wing,31.0,95,3.065
-McRib,1 sandwich,170.0,451,2.653
-Meatball Sandwich,1 sandwich,299.0,481,1.609
-Nachos with Cheese,10 nachos,188.0,575,3.059
-Onion Rings,1 ring,6.5,25,3.846
-Poutine,1 serving,225.0,511,2.271
-Smoked Salmon,1 oz.,28.35,44,1.552
-Spicy Italian,1 sandwich,219.0,480,2.192
-Subway Club Sandwich,1 sandwich,238.0,312,1.311
-Tortilla Wrap,1 wrap,63.0,171,2.714
-Tuna,1 oz.,28.35,24,0.847
-Turkey,1 oz.,28.35,29,1.023
-Veggie Burger,1 burger,215.0,389,1.809
-Veggie Delight,1 sandwich,166.0,229,1.380
-Veggie Patty,1 sandwich,247.0,963,3.899
-Wendy’s Baconator,1 burger,276.0,839,3.040
-Wendy’s Jr. Bacon Cheeseburger,1 burger,161.0,420,2.609
-Wendy’s Jr. Cheeseburger,1 burger,129.0,290,2.248
-Wendy’s Son of Baconator,1 burger,218.0,700,3.211
-Whopper,1 burger,291.0,672,2.309
-Zinger,1 sandwich,202.0,517,2.559
-Zinger Burger,1 sandwich,202.0,517,2.559
+Food_ID,Food,Serving,Calories,Calories/gram
+1,Potato,1,1,1
+2,Cabbage,1,15,1
+3,Baked Beans,1,2,1
+4,Artichoke,1,60,0.469
+5,Arugula,1,1,0.5
+6,Asparagus,1,2,0.167
+7,Aubergine,1,115,0.251
+8,Beetroot,1,35,0.427
+9,Bell Pepper,1,15,0.205
+10,Black Olives,1,2,0.741
+11,Broccoli,1,207,0.34
+12,Brussels Sprouts,1,8,0.421
+13,Cabbage,1,227,0.25
+14,Capsicum,1,12,0.267
+15,Carrot,1,25,0.41
+16,Cauliflower,1,3,0.231
+17,Celery,1,6,0.15
+18,Chard,1,9,0.188
+19,Cherry Tomato,1,20,1
+20,Chicory,1,38,0.717
+21,Chinese Cabbage,1,134,0.16
+22,Chives,1,1,0.333
+23,Collard Greens,1,12,0.333
+24,Corn,1,562,3.649
+25,Courgette,1,33,0.168
+26,Creamed Spinach,1,148,0.74
+27,Cucumber,1,66,0.161
+28,Eggplant,1,115,0.251
+29,Endive,1,87,0.17
+30,Fennel,1,73,0.312
+31,Garlic,1,4,1.333
+32,Gherkin,1,9,0.138
+33,Gourd,1,108,0.14
+34,Green Beans,1,34,0.309
+35,Green Olives,1,2,0.741
+36,Green Onion,1,5,0.333
+37,Horseradish,1,7,0.467
+38,Kale,1,33,0.493
+39,Kohlrabi,1,108,0.27
+40,Kumara,1,112,0.862
+41,Leek,1,54,0.607
+42,Lettuce,1,90,0.15
+43,Mushrooms,1,1,0.185
+44,Mustard Greens,1,15,0.268
+45,Nori,1,1,0.385
+46,Okra,1,4,0.333
+47,Olives,1,2,0.741
+48,Onion,1,34,0.4
+49,Parsnips,1,128,0.753
+50,Peas,1,79,0.806
+51,Pepper,1,20,0.267
+52,Potato,1,164,0.77
+53,Pumpkin,1,51,0.26
+54,Radishes,1,1,0.222
+55,Red Cabbage,1,7,0.318
+56,Rutabaga,1,147,0.381
+57,Shallots,1,18,0.72
+58,Spinach,1,78,0.229
+59,Squash,1,88,0.449
+60,Sweet Potato,1,112,0.862
+61,Tomato,1,20,0.18
+62,Turnip Greens,1,34,0.2
+63,Turnips,1,34,0.279
+64,Wasabi,1,184,1.089
+65,Winter Squash,1,147,0.341
+66,Zucchini,1,33,0.168
+67,Acai,1,20,0.705
+68,Apple,1,95,0.522
+69,Applesauce,1,167,0.679
+70,Apricot,1,17,0.486
+71,Avocado,1,320,1.6
+72,Banana,1,111,0.888
+73,Blackberries,1,62,0.431
+74,Blood Oranges,1,70,0.5
+75,Blueberries,1,84,0.568
+76,Cantaloupe,1,23,0.333
+77,Cherries,1,4,0.5
+78,Clementine,1,35,0.473
+79,Cranberries,1,46,0.46
+80,Currants,1,63,0.562
+81,Custard Apple,1,136,1.007
+82,Dates,1,20,2.817
+83,Figs,1,37,0.74
+84,Fruit salad,1,125,0.502
+85,Grapes,1,104,0.689
+86,Greengage,1,2,0.4
+87,Guava,1,37,0.673
+88,Jackfruit,1,143,0.947
+89,Jujube,1,22,0.776
+90,Kiwi,1,112,0.612
+91,Lemon,1,17,0.293
+92,Lime,1,20,0.299
+93,Lychees,1,7,0.7
+94,Mandarin Oranges,1,47,0.534
+95,Mango,1,202,0.601
+96,Minneola,1,70,0.642
+97,Mulberries,1,60,0.429
+98,Nectarine,1,66,0.44
+99,Olives,1,2,0.741
+100,Orange,1,62,0.473
+101,Papaya,1,215,0.43
+102,Passion Fruit,1,17,0.944
+103,Peach,1,59,0.393
+104,Pear,1,101,0.567
+105,Persimmon,1,32,1.28
+106,Physalis,1,2,0.4
+107,Pineapple,1,453,0.501
+108,Plantains,1,218,1.218
+109,Plum,1,30,0.455
+110,Pomegranate,1,234,0.83
+111,Quince,1,52,0.565
+112,Raisins,1,434,2.993
+113,Rambutan,1,7,0.778
+114,Raspberries,1,64,0.52
+115,Rhubarb,1,11,0.216
+116,Starfruit,1,28,0.308
+117,Strawberries,1,49,0.322
+118,Tamarind,1,5,2.5
+119,Tangerine,1,47,0.534
+120,Watermelon,1,86,0.301
+121,Baby Back Ribs,1,360,2.59
+122,Bacon and Eggs,1,539,2.519
+123,Baked Beans,1,244,0.938
+124,BBQ Ribs,1,360,2.553
+125,Beef Stew,1,186,0.949
+126,Biryani,1,484,1.76
+127,Black Pudding,1,101,2.525
+128,Black Rice,1,323,3.23
+129,BLT,1,593,2.471
+130,Brown Rice,1,670,3.622
+131,Burrito,1,326,1.63
+132,Butter Chicken,1,490,1.4
+133,California Roll,1,33,0.943
+134,Chicken Caesar Salad,1,392,1.269
+135,Chicken Fried Steak,1,423,1.511
+136,Chicken Marsala,1,2209,0.96
+137,Chicken Parmesan,1,250,1.101
+138,Chicken Pot Pie,1,673,2.228
+139,Chicken Tikka Masala,1,195,0.809
+140,Chili con Carne,1,266,1.051
+141,Chimichanga,1,418,2.322
+142,Cobb Salad,1,632,1.179
+143,Collard Greens,1,13,0.289
+144,Corn Dog,1,438,2.503
+145,Corned Beef Hash,1,349,1.638
+146,Cottage Pie,1,523,1.391
+147,Dal,1,304,3.304
+148,Deviled Eggs,1,62,2
+149,Dim Sum,1,37,1.947
+150,Dosa,1,287,0.66
+151,Enchiladas,1,323,1.682
+152,Fajita,1,290,1.169
+153,Fish and Chips,1,585,1.95
+154,Fried Rice,1,662,1.86
+155,Fried Shrimp,1,75,2.778
+156,Grilled Cheese Sandwich,1,392,2.882
+157,Ham and Cheese Sandwich,1,352,2.411
+158,Hummus,1,435,1.768
+159,Jambalaya,1,250,1
+160,Kebab,1,774,2.15
+161,Lasagne,1,284,1.321
+162,Mac and Cheese,1,699,3.698
+163,Macaroni and Cheese,1,699,3.698
+164,Mashed Potatoes,1,174,0.829
+165,Meat Pie,1,290,2.417
+166,Meatloaf,1,721,2.539
+167,Naan,1,260,3.095
+168,Orange Chicken,1,420,2.593
+169,Pad Thai,1,375,1.5
+170,Paella,1,200,1.562
+171,Paratha,1,260,3.25
+172,Pea Soup,1,190,0.751
+173,Peanut Butter Sandwich,1,200,4.082
+174,Peking Duck,1,401,2.253
+175,Philly Cheese Steak,1,300,2.5
+176,Pizza,1,272,2.667
+177,Pork Chop,1,295,2.252
+178,Potato Salad,1,136,1.432
+179,Pulled Pork Sandwich,1,551,2.111
+180,Ramen,1,380,4.471
+181,Ravioli,1,134,2.03
+182,Reuben Sandwich,1,641,2.081
+183,Roast Beef,1,23,1.095
+184,Roast Dinner,1,240,1.983
+185,Samosa,1,107,2.14
+186,Sausage Roll,1,361,3.505
+187,Sausage Rolls,1,101,2.971
+188,Shepherds Pie,1,159,0.7
+189,Shrimp Cocktail,1,130,4.643
+190,Sloppy Joe,1,101,0.711
+191,Sloppy Joes,1,397,1.539
+192,Spaghetti Bolognese,1,374,1.322
+193,Spring Roll,1,350,2.5
+194,Spring Rolls,1,350,2.5
+195,Taco,1,213,2.173
+196,Tandoori Chicken,1,198,1.131
+197,Yorkshire Pudding,1,83,5.533
+198,Amaranth,1,716,3.71
+199,Barley,1,556,3.541
+200,Barley Groats,1,31,1
+201,Brown Rice,1,757,3.882
+202,Buckwheat,1,583,3.429
+203,Buckwheat Groats,1,567,3.457
+204,Corn Waffles,1,110,2.75
+205,Cornmeal,1,442,3.623
+206,Cornstarch,1,488,3.812
+207,Couscous,1,650,3.757
+208,Cracker,1,35,5
+209,Durum Wheat Semolina,1,119,3.967
+210,Flaxseed,1,897,5.339
+211,Freekeh,1,832,5.2
+212,Gluten,1,104,3.714
+213,Grissini,1,20,4
+214,Kamut,1,627,3.371
+215,Millet,1,484,3.781
+216,Millet Flour,1,521,3.721
+217,Millet Gruel,1,80,0.46
+218,Oat Bran,1,231,2.457
+219,Pearl Barley,1,553,3.522
+220,Polenta,1,549,3.66
+221,Prawn Crackers,1,16,5.333
+222,Pretzel Sticks,1,46,3.833
+223,Quinoa,1,626,3.682
+224,Rusk,1,41,4.1
+225,Rye Bran,1,422,2.813
+226,Sago,1,99,3.536
+227,Savoury Biscuits,1,139,3.475
+228,Shortbread,1,95,5
+229,Spelt,1,588,3.379
+230,Spelt Bran,1,283,1.769
+231,Spelt Semolina,1,601,3.599
+232,Sunflower Seeds,1,818,5.843
+233,Tortilla,1,467,2.371
+234,Tortilla Chips,1,160,5
+235,Wheat Bran,1,125,2.155
+236,Wheat Germ,1,432,3.823
+237,Wheat Gluten,1,10,3.333
+238,Wheat Semolina,1,601,3.599
+239,Wheat Starch,1,386,3.509
+240,Whole Grain Wheat,1,407,3.392
+241,Wholegrain Oat,1,300,3.75
+242,Almond Oil,1,123,8.786
+243,Apricot Kernel Oil,1,124,8.857
+244,Argan Oil,1,125,8.929
+245,Avocado Oil,1,120,8.571
+246,Babassu Oil,1,124,8.857
+247,Canola Oil,1,124,8.857
+248,Coconut Oil,1,120,8.571
+249,Corn Oil,1,120,8
+250,Cottonseed Oil,1,123,8.786
+251,Flaxseed Oil,1,124,8.857
+252,Grape Seed Oil,1,124,8.857
+253,Hazelnut Oil,1,124,8.857
+254,Linseed Oil,1,117,8.357
+255,Menhaden Oil,1,128,9.143
+256,Mustard Oil,1,124,8.857
+257,Oat Oil,1,124,8.857
+258,Olive Oil,1,120,8
+259,Palm Kernel Oil,1,123,8.786
+260,Palm Oil,1,123,8.786
+261,Peanut Oil,1,120,8.571
+262,Poppy Seed Oil,1,124,8.857
+263,Pumpkin Seed Oil,1,123,8.786
+264,Rice Bran Oil,1,124,8.857
+265,Safflower Oil,1,120,8.571
+266,Salmon Oil,1,128,9.143
+267,Sesame Oil,1,124,8.857
+268,Shea Oil,1,124,8.857
+269,Soy Oil,1,123,8.786
+270,Sunflower Oil,1,124,8.857
+271,Tomato Seed Oil,1,124,8.857
+272,Vegetable Oil,1,120,8
+273,Walnut Oil,1,124,8.857
+274,Wheat Germ Oil,1,130,9.286
+275,Alphabet Soup,1,62,0.25
+276,Bean Stew,1,335,1.329
+277,Beef Bouillon,1,7,0.029
+278,Beef Noodle Soup,1,83,0.34
+279,Beef Soup,1,70,0.329
+280,Bouillon,1,39,0.16
+281,Broccoli Cheese Soup,1,264,0.871
+282,Broccoli Soup,1,206,0.869
+283,Cabbage Soup,1,69,0.282
+284,Carrot Ginger Soup,1,95,0.249
+285,Carrot Soup,1,95,0.249
+286,Chicken Bouillon,1,10,0.041
+287,Chicken Broth,1,39,0.16
+288,Chicken Gumbo Soup,1,56,0.23
+289,Chicken Noodle Soup,1,62,0.25
+290,Chicken Stock,1,39,0.16
+291,Chicken Vegetable Soup,1,77,0.31
+292,Chicken with Rice Soup,1,58,0.239
+293,Cream of Asparagus Soup,1,85,0.348
+294,Cream of Broccoli Soup,1,140,0.452
+295,Cream of Celery Soup,1,92,0.371
+296,Cream of Chicken Soup,1,117,0.48
+297,Cream of Mushroom Soup,1,97,0.391
+298,Cream of Onion Soup,1,107,0.439
+299,Cream of Potato Soup,1,73,0.299
+300,Creamy Chicken Noodle Soup,1,56,0.229
+301,French Onion Soup,1,56,0.23
+302,Golden Mushroom Soup,1,161,0.649
+303,Goulash,1,1887,10.091
+304,Instant Ramen,1,371,4.365
+305,Lentil Soup,1,139,0.56
+306,Lobster Bisque Soup,1,248,1
+307,Meatball Soup,1,120,0.49
+308,Minestrone,1,82,0.34
+309,Mushroom Soup,1,85,0.348
+310,Noodle Soup,1,83,0.34
+311,Onion Soup,1,56,0.23
+312,Oxtail Soup,1,68,0.279
+313,Pea Soup,1,190,0.751
+314,Potato Soup,1,192,0.8
+315,Pumpkin Soup,1,71,0.29
+316,Ramen,1,371,4.365
+317,Scotch Broth,1,80,0.332
+318,Succotash,1,221,1.151
+319,Thai Soup,1,147,0.6
+320,Tomato Rice Soup,1,116,0.47
+321,Tomato Soup,1,74,0.298
+322,Vegetable Beef Soup,1,76,0.311
+323,Vegetable Broth,1,12,0.051
+324,Vegetable Soup,1,67,0.278
+325,Vegetable Stock,1,12,0.051
+326,Wedding Soup,1,130,0.531
+327,Baskin-Robbins,1,170,2.394
+328,Ben and Jerry’s,1,210,2.283
+329,Butter Pecan Ice Cream,1,280,2.478
+330,Carvel,1,449,2.118
+331,Chocolate Chip Ice Cream,1,155,2.153
+332,Chocolate Ice Cream,1,156,2.167
+333,Ciao Bella,1,240,1.091
+334,Coffee Ice Cream,1,170,2.361
+335,Cold Stone Creamery,1,329,2.317
+336,Cookie Dough Ice Cream,1,130,2
+337,Crunchie McFlurry,1,318,1.738
+338,Dairy Milk McFlurry,1,340,1.858
+339,Dippin Dots,1,381,2.241
+340,Double Rainbow,1,185,2.569
+341,Drumsticks,1,360,2.553
+342,French Vanilla Ice Cream,1,145,2.014
+343,Friendly’s,1,140,2.121
+344,Healthy Choice,1,80,1.25
+345,Hot Fudge Sundae,1,333,1.86
+346,Ice Cream Sandwich,1,265,2.366
+347,Ice Cream Sundae,1,253,1.421
+348,Ice Milk,1,164,1.592
+349,Magnolia,1,166,2.306
+350,Magnum,1,258,3
+351,Magnum Almond,1,271,3.151
+352,Magnum Double Caramel,1,305,3.547
+353,Magnum Double Chocolate,1,327,3.802
+354,Magnum Gold,1,290,3.412
+355,Magnum White,1,255,2.965
+356,McFlurry,1,205,1.53
+357,McFlurry Oreo,1,340,1.858
+358,Mini Milk,1,30,1.2
+359,Mint Chocolate Chip Ice Cream,1,172,2.389
+360,Rocky Road Ice Cream,1,290,2.566
+361,Schwan’s,1,177,2.458
+362,Smarties McFlurry,1,400,1.98
+363,Snickers Ice Cream,1,180,3.6
+364,Soft Serve,1,191,2.221
+365,Solero,1,75,1
+366,Strawberry Ice Cream,1,170,2.361
+367,Strawberry Sundae,1,281,1.579
+368,Sundae,1,155,2.153
+369,Turkey Hill,1,190,2.714
+370,Vanilla Cone,1,230,1.62
+371,Vanilla Ice Cream,1,145,2.014
+372,Cannelloni,1,82,1.464
+373,Capellini,1,198,3.536
+374,Cappelletti,1,92,1.643
+375,Cellophane Noodles,1,491,3.507
+376,Cheese Tortellini,1,329,2.912
+377,Dampfnudel,1,233,2.741
+378,Dumpling Dough,1,55,0.982
+379,Durum Wheat Semolina,1,222,3.964
+380,Egg Noodles,1,146,3.842
+381,Farfalle,1,200,3.571
+382,Fettuccine,1,198,3.536
+383,Fusilli,1,197,3.518
+384,Glass Noodles,1,108,1.929
+385,Lasagne Sheets,1,57,2.714
+386,Linguine,1,200,3.571
+387,Low Carb Pasta,1,158,2.821
+388,Macaroni,1,422,3.702
+389,Manicotti,1,200,3.571
+390,Mostaccioli,1,103,1.839
+391,Orecchiette,1,207,3.696
+392,Orzo,1,200,3.571
+393,Penne,1,197,3.518
+394,Penne Rigate,1,207,3.696
+395,Pierogi,1,200,2
+396,Ravioli,1,43,0.768
+397,Rigatoni,1,198,3.536
+398,Rotini,1,198,3.536
+399,Shells,1,300,3.529
+400,Shirataki Noodles,1,10,0.179
+401,Soy Noodles,1,121,2.161
+402,Spaetzle,1,206,3.679
+403,Spaghetti,1,207,3.696
+404,Spinach Tortellini,1,320,3.137
+405,Spirelli,1,206,3.679
+406,Tagliatelle,1,207,3.696
+407,Tortellini,1,329,2.912
+408,Vermicelli,1,206,3.679
+409,Whole Grain Noodles,1,194,3.464
+410,Whole Grain Spaghetti,1,197,3.518
+411,Ziti,1,197,3.518
+412,BBQ Chicken Pizza,1,309,2.341
+413,BBQ Pizza,1,314,2.243
+414,Beef Pizza,1,714,3.038
+415,Bianca Pizza,1,460,2.46
+416,Buffalo Chicken Pizza,1,600,2.521
+417,Calabrese Pizza,1,254,2.352
+418,Calzone,1,841,2.31
+419,Capricciosa Pizza,1,192,2.595
+420,Cheese Pizza,1,168,2.667
+421,Chicken Pizza,1,309,2.341
+422,Deep Dish Pizza,1,313,2.653
+423,Dominos Philly Cheese Steak Pizza,1,356,2.239
+424,Four Cheese Pizza,1,250,2.212
+425,Goat Cheese Pizza,1,138,2.19
+426,Grilled Pizza,1,280,2.258
+427,Hawaiian Pizza,1,154,1.149
+428,Margherita Pizza,1,173,2.746
+429,Mozzarella Pizza,1,154,2.484
+430,Mushroom Pizza,1,611,2.122
+431,Napoli Pizza,1,248,2.016
+432,New York Style Pizza,1,174,1.689
+433,Pepperoni Pizza,1,181,2.549
+434,Pizza Dough,1,130,2.281
+435,Pizza Hut Stuffed Crust Pizza,1,380,2.55
+436,Pizza Hut Supreme Pizza,1,305,2.48
+437,Pizza Rolls,1,35,2.5
+438,Quattro Formaggi Pizza,1,330,2.481
+439,Red Pepper Pizza,1,165,1.919
+440,Salami Pizza,1,181,2.549
+441,Sausage Pizza,1,177,2.458
+442,Seafood Pizza,1,186,2.447
+443,Shrimp Pizza,1,190,2.088
+444,Sicilian Pizza,1,321,2.414
+445,Spinach Feta Pizza,1,150,2.419
+446,Spinach Pizza,1,145,2.339
+447,Stuffed Crust Pizza,1,380,2.55
+448,Tarte Flambée,1,142,2.536
+449,Thin Crust Pizza,1,157,2.617
+450,Tuna Pizza,1,318,2.544
+451,Vegetable Pizza,1,399,2.558
+452,Vegetarian Pizza,1,399,2.558
+453,Veggie Pizza,1,263,2.307
+454,White Pizza,1,571,2.461
+455,Acerola,1,1,0.208
+456,Asian Pear,1,75,0.421
+457,Avocado,1,320,1.6
+458,Banana,1,111,0.888
+459,Breadfruit,1,99,1.031
+460,Cantaloupe Melon,1,23,0.333
+461,Casaba Melon,1,35,0.28
+462,Cherimoya,1,176,0.749
+463,Dragon Fruit,1,120,0.6
+464,Durian,1,885,1.47
+465,Feijoa,1,23,0.548
+466,Galia Melon,1,30,0.231
+467,Grapefruit,1,52,0.423
+468,Guava,1,37,0.673
+469,Honeydew,1,45,0.36
+470,Jackfruit,1,143,0.947
+471,Kiwi,1,112,0.612
+472,Kumquat,1,13,0.684
+473,Lychee,1,7,0.7
+474,Mandarin Oranges,1,48,0.533
+475,Mango,1,202,0.601
+476,Mangosteen,1,58,0.725
+477,Maracuya,1,17,0.944
+478,Maraschino Cherries,1,8,1.6
+479,Muskmelon,1,23,0.333
+480,Noni,1,15,0.528
+481,Passion Fruit,1,17,0.944
+482,Pineapple,1,453,0.501
+483,Pink Grapefruit,1,52,0.423
+484,Plantain,1,218,1.218
+485,Pomegranate,1,234,0.83
+486,Pomelo,1,231,0.379
+487,Prickly Pear,1,8,0.421
+488,Rambutan,1,7,0.778
+489,Sapodilla,1,141,0.829
+490,Soursop Fruit,1,413,0.661
+491,Star Fruit,1,28,0.308
+492,Tamarind,1,5,2.5
+493,Watermelon,1,86,0.301
+494,Arby’s Grand Turkey Club,1,489,2.099
+495,Arby’s Reuben,1,641,2.081
+496,Arby’s Roast Beef Classic,1,360,2.338
+497,Arby’s Roast Beef Max,1,360,2.338
+498,BBQ Rib,1,142,2.119
+499,Bean Burrito,1,380,2
+500,Big N’ Tasty,1,517,2.228
+501,Bratwurst,1,283,3.329
+502,Burger King Angry Whopper,1,740,2.552
+503,Burger King Double Whopper,1,894,2.39
+504,Burger King Double Whopper with Cheese,1,994,2.491
+505,Burger King Original Chicken Sandwich,1,659,3.009
+506,Burger King Premium Alaskan Fish Sandwich,1,591,2.592
+507,Burger King Triple Whopper,1,1471,2.689
+508,Burger King Whopper,1,672,2.309
+509,Burger King Whopper Jr.,1,346,2.338
+510,Burger King Whopper with Cheese,1,759,2.41
+511,Cheeseburger,1,410,2.628
+512,Chicken Breast,1,116,1.634
+513,Chicken Fajita,1,326,1.468
+514,Chicken McNuggets,1,48,3
+515,Chicken Nuggets,1,59,2.95
+516,Chicken Pizziola,1,451,1.409
+517,Chicken Sandwich,1,410,2.412
+518,Chicken Teriyaki Sandwich,1,367,1.38
+519,Chicken Wings,1,94,3.241
+520,Chop Suey,1,585,1.721
+521,Curly Fries,1,398,3.109
+522,Double Cheeseburger,1,414,2.671
+523,Egg Roll,1,200,2.5
+524,Falafel,1,57,3.353
+525,Filet-o-Fish,1,400,2.817
+526,Fish and Chips,1,585,1.95
+527,Fish Sandwich,1,431,2.728
+528,French Fries,1,222,3.127
+529,Grilled Chicken Salad,1,268,0.879
+530,Ham Sandwich,1,352,2.411
+531,Hamburger,1,279,2.536
+532,Hot Dog,1,312,2.69
+533,Italian BMT,1,410,1.83
+534,Lasagna,1,172,1.323
+535,McDonald’s Big Mac,1,561,2.562
+536,McDonald’s Cheeseburger,1,300,2.632
+537,McDonald’s Chicken Nuggets,1,48,3
+538,McDonald’s Double Cheeseburger,1,437,2.819
+539,McDonald’s Filet-o-Fish,1,391,2.754
+540,McDonald’s McChicken,1,359,2.51
+541,McDonald’s McDouble,1,403,2.519
+542,McDonald’s McMuffi Egg,1,290,2.248
+543,McDonald’s McRib,1,451,2.653
+544,McDonald’s Mighty Wings,1,95,3.065
+545,McRib,1,451,2.653
+546,Meatball Sandwich,1,481,1.609
+547,Nachos with Cheese,1,575,3.059
+548,Onion Rings,1,25,3.846
+549,Poutine,1,511,2.271
+550,Smoked Salmon,1,44,1.552
+551,Spicy Italian,1,480,2.192
+552,Subway Club Sandwich,1,312,1.311
+553,Tortilla Wrap,1,171,2.714
+554,Tuna,1,24,0.847
+555,Turkey,1,29,1.023
+556,Veggie Burger,1,389,1.809
+557,Veggie Delight,1,229,1.38
+558,Veggie Patty,1,963,3.899
+559,Wendy’s Baconator,1,839,3.04
+560,Wendy’s Jr. Bacon Cheeseburger,1,420,2.609
+561,Wendy’s Jr. Cheeseburger,1,290,2.248
+562,Wendy’s Son of Baconator,1,700,3.211
+563,Whopper,1,672,2.309
+564,Zinger,1,517,2.559
+565,Zinger Burger,1,517,2.559
