@@ -79,9 +79,8 @@
                                                                 "UPDATE food_history SET Servings =" . $updateValue . " WHERE EntryID = " . $entryID);
                                                         if (!$update) {
                                                             echo "Error updating entry" . $conn->error;
-                                                        } else {
-                                                            header("Location: food.php");
-                                                        }
+                                                        } 
+                                                        header("Location: dashboard.php");
                                                     }
                                                     // If action is to DELETE
                                                     if (isset($_POST['Delete'])) {
@@ -90,9 +89,8 @@
                                                                 "DELETE FROM food_history WHERE EntryID = " . $entryID);
                                                         if (!$del) {
                                                             echo "Error deleting entry" . $conn->error;
-                                                        } else {
-                                                            header("Location: food.php");
                                                         }
+                                                        header("Location: dashboard.php");
                                                     }
                                                     ?>
 
@@ -134,9 +132,8 @@
                                                 "INSERT INTO food_history (User_ID, Food_ID, timing, Servings)VALUES (".$_SESSION['ID'].", " . $newFoodID . ", CURRENT_DATE(), " . $newServing . ");");
                                         if (!$newInsert) {
                                             echo "Error inserting entry foodID: " . $newFoodID . " error" . $newServing . ": " . $conn->connect_error;
-                                        } else {
-                                            header("Location: food.php");
-                                        }
+                                        } 
+                                        header("Location: dashboard.php");
                                     }
                                     ?>
 
