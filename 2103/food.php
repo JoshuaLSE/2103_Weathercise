@@ -3,13 +3,15 @@
     <?php // include "connection.php"; ?>
     <?php
     session_start();
-//    if (session_status() == PHP_SESSION_NONE) {
-//        session_start();
-//    }
     if (isset($_SESSION['ID'])) {
+        
     } else {
-        header('Location:login.php');
+//        header('Location:login.php');
     }
+    $todaysDate = new MongoDB\BSON\UTCDateTime(strtotime(date('Y-m-d')) * 1000);
+    $weekAgo = new MongoDB\BSON\UTCDateTime(strtotime(date('Y-m-d', strtotime('-1 Week'))) * 1000);
+    $server = "mongodb+srv://admin:Passw0rd@ict2103.jbggf.mongodb.net/test?authSource=admin&replicaSet=atlas-lie30k-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true";
+    $client = new MongoDB\Driver\Manager($server);
     ?>
     <head>
         <title>Weathercise</title>
@@ -26,22 +28,7 @@
                         <h5 class="card-header">Food Intake History (Past Week)</h5>
                         <div class="card-body" style='height: 350px'>
                             <?php
-                            $user = 'sqldev';
-                            $password = 'P@55w0rd';
-                            $database = 'ICT2103';
-                            $servername = 'localhost';
-                            $conn = new mysqli($servername, $user, $password, $database);
-                            // Check connection
-                            if ($conn->connect_error) {
-                                die("Connection failed: " . $conn->connect_error);
-                            }
-                            // SQL query to select data from database
-                            $sql = "SELECT * FROM food_history as a "
-                                    . "LEFT JOIN food_calories AS b "
-                                    . "ON a.Food_ID = b.Food_ID "
-                                    . "WHERE timing between date_sub(now(),INTERVAL 1 WEEK) and now()"
-                                    . "AND User_ID = ".$_SESSION["ID"].";";
-                            $result = $conn->query($sql);
+//                            figure out how to store the table variables
                             ?>
                             <div class="table-wrapper-scroll-y my-custom-scrollbar">
                                 <table class="table table-bordered table-striped mb-0">
@@ -58,55 +45,69 @@
                                         <!-- PHP CODE TO FETCH DATA FROM ROWS-->
                                         <?php
                                         $totalCalories = 0;
-                                        // LOOP TILL END OF DATA 
-                                        while ($rows = $result->fetch_assoc()) {
-                                            $totalCalories += ($rows['Calories'] * $rows['Servings']);
-                                            ?>
-                                            <tr>
-                                                <!--FETCHING DATA FROM EACH 
-                                                    ROW OF EVERY COLUMN-->
-                                                <th><?php echo $rows['timing']; ?></th>
-                                                <td><?php echo $rows['Food']; ?></td>
-                                                <td><?php echo $rows['Servings']; ?></td>
-                                                <td><?php echo $rows['Calories'] * $rows['Servings'] ?></td>
-                                                <td>
-                                                    <?php
-                                                    // If action is to EDIT
-                                                    if (isset($_POST['Edit'])) {
-                                                        $entryID = $_POST['id'];
-                                                        $updateValue = $_POST['newQuantity'];
-                                                        $update = mysqli_query($conn,
-                                                                "UPDATE food_history SET Servings =" . $updateValue . " WHERE EntryID = " . $entryID);
-                                                        if (!$update) {
-                                                            echo "Error updating entry" . $conn->error;
-                                                        } 
-                                                        header("Location: dashboard.php");
-                                                    }
-                                                    // If action is to DELETE
-                                                    if (isset($_POST['Delete'])) {
-                                                        $entryID = $_POST['id'];
-                                                        $del = mysqli_query($conn,
-                                                                "DELETE FROM food_history WHERE EntryID = " . $entryID);
-                                                        if (!$del) {
-                                                            echo "Error deleting entry" . $conn->error;
-                                                        }
-                                                        header("Location: dashboard.php");
-                                                    }
-                                                    ?>
+                                        $filter = ["User_ID" => "1", "Date"=>['$gt'=>$weekAgo]];
+//                                        $filter = ["User_ID" => $_SESSION['ID']];
 
-                                                    <form id = "EDITFORM" action="" method="post">
-                                                        <label for="newQuantity">Input a Quantity:</label>
-                                                        <input type="number" min="1" max="5" name="newQuantity" id="newQuantity" placeholder="Update servings">
-                                                        <input type="submit" name="Edit" value="Edit">
-                                                        <input type="hidden" name="id" value="<?php echo $rows['EntryID']; ?>">
-                                                    </form>
-                                                    <form id = "DELETEFORM" action="" method="post">
-                                                        <input type="submit" name="Delete" value="Delete">
-                                                        <input type="hidden" name="id" value="<?php echo $rows['EntryID']; ?>">
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <?php
+                                        $options = []; /* put desired options here, should you need any */
+
+                                        $query = new MongoDB\Driver\Query($filter, $options);
+
+                                        $documents = $client->executeQuery('ICT2103.food_history', $query);
+//                                            FETCHING DATA FROM EACH ROW OF EVERY COLUMN
+                                        ?>
+                                        <!--FETCHING DATA FROM EACH 
+                                            ROW OF EVERY COLUMN-->
+                                        <?php
+                                        foreach ($documents as $document) {
+                                            $resultDate = new MongoDB\BSON\UTCDateTime(strval($document->Date));
+                                            $resultDate = $resultDate->toDateTime()->format("d M Y");
+                                            $document = json_decode(json_encode($document), true);
+                                            $filter = ["Food_ID" => $document["Food_ID"],];
+////                                                $filter = ["User_ID" => $_SESSION['ID']];
+                                            $cal = new MongoDB\Driver\Query($filter);
+                                            $calories = $client->executeQuery('ICT2103.food_calories', $cal);
+                                            foreach ($calories as $calory) {
+                                                $calory = json_decode(json_encode($calory), true);
+                                                $calResult = $calory["Calories"];
+                                                $foodName = $calory["Food"];
+                                            }
+                                            $calculatedCal = $document["Servings"] * $calResult;
+                                            echo "<tr>";
+                                            echo "<th>" . $resultDate . "</th>";
+                                            echo "<td>" . $foodName . "</td>";
+                                            echo "<td>" . $document["Servings"] . "</td>";
+                                            echo "<td>" . $calculatedCal . "</td>";
+                                            $totalCalories += $calculatedCal;
+                                            // If action is to EDIT
+                                            echo '<td>';
+                                            echo '<form id = "EDITFORM" action = "" method = "post">';
+                                            echo '<label for = "newQuantity">Input a Quantity:</label>';
+                                            echo '<input type = "number" min = "1" max = "5" name = "newQuantity" id = "newQuantity" placeholder = "Update servings">';
+                                            echo '<input type = "submit" name = "Edit" value = "Edit">';
+                                            echo '<input type = "hidden" name = "id" value = "' . implode("", $document["_id"]) . '">';
+                                            echo '</form>';
+                                            // If action is to DELETE
+                                            echo '<form id = "DELETEFORM" action = "" method = "post">';
+                                            echo '<input type = "submit" name = "Delete" value = "Delete">';
+                                            echo '<input type = "hidden" name = "id" value = "' . implode("", $document["_id"]) . '">';
+                                            echo '</form>';
+                                            echo '</td>';
+                                            echo "</tr>";
+                                        }
+                                        $bulk = new MongoDB\Driver\BulkWrite;
+                                        if (isset($_POST['Edit'])) {
+                                            $entryID = new MongoDB\BSON\ObjectID($_POST['id']);
+                                            $updateValue = $_POST['newQuantity'];
+                                            $bulk->update(['_id' => $entryID], ['$set' => ['Servings' => $updateValue]], ['multi' => false, 'upsert' => false]);
+
+                                            $result = $client->executeBulkWrite('ICT2103.food_history', $bulk);
+                                        }
+                                        // If action is to DELETE
+                                        if (isset($_POST['Delete'])) {
+                                            $entryID = new MongoDB\BSON\ObjectID($_POST['id']);
+                                            $bulk->delete(['_id' => $entryID], ['limit' => 0]);
+
+                                            $result = $client->executeBulkWrite('ICT2103.food_history', $bulk);
                                         }
                                         ?>
                                     </tbody>
@@ -121,19 +122,21 @@
                                     <h1>Add your recent meals!</h1>
                                     <?php
                                     // SQL query to select data from database
-                                    $sql_options = "SELECT Food, Food_ID FROM food_calories";
-                                    $results = $conn->query($sql_options);
-
                                     // If action is to EDIT
                                     if (isset($_POST['Submit'])) {
                                         $newFoodID = $_POST['foodOptions'];
-                                        $newServing = $_POST['servings'];
-                                        $newInsert = mysqli_query($conn,
-                                                "INSERT INTO food_history (User_ID, Food_ID, timing, Servings)VALUES (".$_SESSION['ID'].", " . $newFoodID . ", CURRENT_DATE(), " . $newServing . ");");
-                                        if (!$newInsert) {
-                                            echo "Error inserting entry foodID: " . $newFoodID . " error" . $newServing . ": " . $conn->connect_error;
-                                        } 
-                                        header("Location: dashboard.php");
+                                        $newServings = $_POST['servings'];
+                                        $bulk = new MongoDB\Driver\BulkWrite;
+//                                        Creating the document
+                                        $insertEntry = [
+                                            'User_ID' => '1',
+                                            'Food_ID' => $newFoodID,
+                                            'Servings' => $newServings,
+                                            'Date' => $todaysDate,
+                                        ];
+//                                        Insert into Food History here
+                                        $bulk->insert($insertEntry);
+                                        $result = $client->executeBulkWrite('ICT2103.food_history', $bulk);
                                     }
                                     ?>
 
@@ -142,14 +145,20 @@
                                         <select name="foodOptions" id = "foodOptions">
                                             <?php
                                             // LOOP TILL END OF DATA 
-                                            while ($rowd = $results->fetch_assoc()) {
-                                                ?>
-                                                <!--FETCHING DATA FROM EACH 
-                                                    ROW OF EVERY COLUMN-->
-                                                <option value = "<?php echo $rowd['Food_ID']; ?>"><?php echo $rowd['Food']; ?></option>
-                                                <?php
+                                            $filter = [];
+
+                                            $options = []; /* put desired options here, should you need any */
+
+                                            $query = new MongoDB\Driver\Query($filter, $options);
+
+                                            $documents = $client->executeQuery('ICT2103.food_calories', $query);
+//                                            FETCHING DATA FROM EACH ROW OF EVERY COLUMN
+                                            foreach ($documents as $document) {
+                                                $document = json_decode(json_encode($document), true);
+                                                echo "<option value=" . $document["Food_ID"] . ">" . $document["Food"] . "</option>";
                                             }
                                             ?>
+                                            <!--                                            <option value=Food_ID>Food</option>-->
                                         </select>   
 
                                         <h3>Servings</h3>
@@ -169,7 +178,6 @@
                                 <p class="card-text">Total Calories: <?php echo $totalCalories; ?></p>
                                 <p class="card-text">Average Calories/Day: <?php echo number_format($totalCalories /= 7, 2); ?></p>
                                 <?php
-                                $totalCalories = $totalCalories / 7;
                                 if ($totalCalories <= 30) {
                                     echo"<img class='img-responsive' src='https://clasebcn.com/wp-content/uploads/2020/04/harold-03.jpg' width='150' height='150'>";
                                 } else if ($totalCalories > 30 && $totalCalories < 50) {
@@ -187,5 +195,4 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     </body>
-    <?php $conn->close(); ?>
 </html>
