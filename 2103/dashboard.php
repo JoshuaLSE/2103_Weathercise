@@ -88,7 +88,7 @@ $_SESSION["Username"] = "Botato";
                                 $userlocation = "";
                                 $location_id = "";
                                 //query for user location_id using session
-                                $filter = ["User_ID" => strval($_SESSION['ID'])];
+                                $filter = ["UserName" => strval($_SESSION['Username'])];
                                 $query = new MongoDB\Driver\Query($filter);
 
 #executing
