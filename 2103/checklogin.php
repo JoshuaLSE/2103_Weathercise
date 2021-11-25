@@ -1,41 +1,24 @@
-<?php 
-$username = $_POST['username'] ;   
-$password = $_POST['password'] ;
-$conn = mysqli_connect("localhost", "sqldev", "P@55w0rd", "ICT2103");
-if ($conn->connect_error) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+<?php
 
-$sql = "SELECT * FROM User WHERE UserName = '$username' and Password='$password'  " ; 
-$sql_username = "SELECT UserName from User where UserName ='$username'";
-$search_result = mysqli_query($conn , $sql);   
-$result = mysqli_query($conn, $sql_username);
-$sql_memberid = "SELECT User_ID from User where UserName='$username'";
-$resultid = mysqli_query($conn,$sql_memberid);
-// Return the number of rows in search result
-$userfound = mysqli_num_rows($search_result);
-$usernames = mysqli_num_rows($resultid);
+$username = $_POST['username'];
+$password = $_POST['password'];
+$filter = ["UserName" => $username, "Password" => $password];
 
-$row = mysqli_fetch_assoc($result);
-$rowid = mysqli_fetch_assoc($resultid);
-$name = $row["UserName"];
-$nameid = $rowid["User_ID"];
-echo $name;
-echo $nameid;
+$server = "mongodb+srv://admin:Passw0rd@ict2103.jbggf.mongodb.net/test?authSource=admin&replicaSet=atlas-lie30k-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true";
+$client = new MongoDB\Driver\Manager($server);
+//$options = ['find'=>array('password'=>$password)]; # limit -1 from newest to oldest
 
-if($userfound >= 1) {
+$stats = new MongoDB\Driver\Query($filter);
+
+$res = $client->executeQuery("ICT2103.user", $stats);
+if (empty(current($res->toArray()))) {
+    header("Location:login.php?fail=1");
+} else {
     session_start();
-    
-    $_SESSION['Username'] = $name;
-    $_SESSION['ID']= $nameid;
-    
-    header("Location:dashboard.php");  	// go to main.php
-}
-else {
-    // User record is NOT found in the userinfo table
-    //header("Location:login.php?fail");  	// go back to login page
-   //echo "cannot login";
-}
 
+    echo $_SESSION['Username'] = $username;
+    //echo $_SESSION['ID']= $nameid;
 
+    header("Location:dashboard.php");
+}
 ?>
