@@ -45,7 +45,7 @@
                                         <!-- PHP CODE TO FETCH DATA FROM ROWS-->
                                         <?php
                                         $totalCalories = 0;
-                                        $filter = ["User_ID" => "1", "Date"=>['$gt'=>$weekAgo]];
+                                        $filter = ["User_ID" => "1", "Date" => ['$gt' => $weekAgo]];
 //                                        $filter = ["User_ID" => $_SESSION['ID']];
 
                                         $options = []; /* put desired options here, should you need any */
@@ -170,22 +170,22 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Weekly Statistics</h5>
-                                <p class="card-text">Total Calories: <?php echo $totalCalories; ?></p>
-                                <p class="card-text">Average Calories/Day: <?php echo number_format($totalCalories /= 7, 2); ?></p>
-                                <?php
-                                if ($totalCalories <= 30) {
-                                    echo"<img class='img-responsive' src='https://clasebcn.com/wp-content/uploads/2020/04/harold-03.jpg' width='150' height='150'>";
-                                } else if ($totalCalories > 30 && $totalCalories < 50) {
-                                    echo"<img class='img-responsive' src='https://i0.kym-cdn.com/photos/images/original/001/119/076/193.jpg' width='150' height='150'>";
-                                } else {
-                                    echo"<img class='img-responsive' src='https://www.dailydot.com/wp-content/uploads/2018/03/haroldmancity.png' width='150' height='150'>";
-                                }
-                                ?>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weekly Statistics</h5>
+                                    <p class="card-text">Total Calories: <?php echo $totalCalories; ?></p>
+                                    <p class="card-text">Average Calories/Day: <?php echo number_format($totalCalories /= 7, 2); ?></p>
+                                    <?php
+                                    if ($totalCalories <= 30) {
+                                        echo"<img class='img-responsive' src='https://clasebcn.com/wp-content/uploads/2020/04/harold-03.jpg' width='150' height='150'>";
+                                    } else if ($totalCalories > 30 && $totalCalories < 50) {
+                                        echo"<img class='img-responsive' src='https://i0.kym-cdn.com/photos/images/original/001/119/076/193.jpg' width='150' height='150'>";
+                                    } else {
+                                        echo"<img class='img-responsive' src='https://www.dailydot.com/wp-content/uploads/2018/03/haroldmancity.png' width='150' height='150'>";
+                                    }
+                                    ?>
+                                </div>
                             </div>
                         </div>
                     </div>
