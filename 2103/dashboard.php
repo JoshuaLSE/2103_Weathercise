@@ -1,4 +1,16 @@
-<?php declare(strict_types=1) ?>
+<?php
+$server = "mongodb+srv://admin:Passw0rd@ict2103.jbggf.mongodb.net/test?authSource=admin&replicaSet=atlas-lie30k-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true";
+$client = new MongoDB\Driver\Manager($server);
+// check for session id
+$_SESSION['ID'] = 1;
+$_SESSION["Username"] = "Botato";
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
+ */
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,19 +22,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-
-        <?php
-        session_start();
-        if ($_SESSION['ID'] == null) {
-            header('Location:login.php');
-        } else {
-            // connection to mysql database
-            $conn = mysqli_connect("localhost", "sqldev", "P@55w0rd", "ICT2103");
-            if ($conn->connect_error) {
-                die("Please contact the admin");
-            }
-        }
-        ?>
     </head>
     <body>
         <nav class="navbar navbar-light bg-light p-3">
@@ -86,17 +85,29 @@
                         <div class="card">
                             <div class="card-header">
                                 <?php
-                                // query for user location
-                                $userlocationquery = "select location_name from locations where locations.location_id = (select location_id from User where User.User_ID = " . $_SESSION["ID"] . ");";
-                                $result = mysqli_query($conn, $userlocationquery);
                                 $userlocation = "";
-                                if (mysqli_num_rows($result) > 0) {
-                                    // output data of each row
-                                    $row = mysqli_fetch_assoc($result);
-                                    $userlocation = $row['location_name'];
-                                    echo "Recommended Exercise" . ' (' . $userlocation . ')';
-                                } else {
-                                    echo "Recommended Exercise (Please update location)";
+                                $location_id = "";
+                                //query for user location_id using session
+                                $filter = ["User_ID" => strval($_SESSION['ID'])];
+                                $query = new MongoDB\Driver\Query($filter);
+
+#executing
+                                $cursor = $client->executeQuery('ICT2103.user', $query);
+
+                                foreach ($cursor as $document) {
+                                    $location_id = $document->location_id;
+                                }
+
+                                //store current user location
+                                $filter = ["location_id" => $location_id];
+                                $query = new MongoDB\Driver\Query($filter);
+
+#executing
+                                $cursor = $client->executeQuery('ICT2103.locations', $query);
+
+                                foreach ($cursor as $document) {
+                                    $userlocation = $document->location_name;
+                                    echo "Recommended Exercise (" . $document->location_name . ")";
                                 }
                                 ?>
                             </div>
@@ -144,36 +155,30 @@
                                     if ($userlocation != "") {
 //check which exercise is recommended for current user
                                         if (strpos($user_forecast, 'rain') !== false) {
-                                            $sql = "select * from exercise where exercise.Condition = 'Indoor' order by rand() limit 10;";
-                                            $result = mysqli_query($conn, $sql);
-                                            if (mysqli_num_rows($result) > 0) {
-                                                while ($row = mysqli_fetch_array($result)) {
-                                                    if ($row != null) {
-                                                        echo "<tr>" . "<td>" . $row["Type"] . "</td>" . "<td>" . $row["intensity"] . "</td>" . "</tr>";
-                                                    }
-                                                }
-                                            } else {
-                                                echo "0 results";
+                                            echo "here";
+                                            $filter = ["Condition" => "Indoor"];
+                                            $query = new MongoDB\Driver\Query($filter, ['limit' => 10]);
+
+#executing
+                                            $cursor = $client->executeQuery('ICT2103.exercise', $query);
+
+                                            foreach ($cursor as $document) {
+                                                echo "<tr>" . "<td>" . $document->Type . "</td>" . "<td>" . $document->intensity . "</td>" . "</tr>";
                                             }
                                         } else {
-                                            $sql = "select * from exercise order by rand() limit 10;";
-                                            $result = mysqli_query($conn, $sql);
-                                            if (mysqli_num_rows($result) > 0) {
-                                                $count = 0;
-                                                while ($row = mysqli_fetch_array($result)) {
-                                                    if ($row != null) {
-                                                        echo "<tr>" . "<td>" . $row["Type"] . "</td>" . "<td>" . $row["intensity"] . "</td>" . "</tr>";
-                                                    }
-                                                }
-                                            } else {
-                                                echo "0 results";
+                                            $filter = [];
+                                            $query = new MongoDB\Driver\Query($filter, ['limit' => 10]);
+
+#executing
+                                            $cursor = $client->executeQuery('ICT2103.exercise', $query);
+
+                                            foreach ($cursor as $document) {
+                                                echo "<tr>" . "<td>" . $document->Type . "</td>" . "<td>" . $document->intensity . "</td>" . "</tr>";
                                             }
                                         }
                                     } else {
                                         echo "";
                                     }
-                                    
-                                    mysqli_close($conn);
                                     ?>
                                 </tbody>
                             </table>
@@ -234,4 +239,7 @@
 
 
 </html>
+© 2021 GitHub, Inc.
+Terms
+
 
