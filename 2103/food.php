@@ -7,19 +7,20 @@
 //        session_start();
 //    }
     if (isset($_SESSION['ID'])) {
+        
     } else {
         header('Location:login.php');
     }
     ?>
     <head>
         <title>Weathercise</title>
-        <?php include "head-dashboard.inc.php"; ?>
+<?php include "head-dashboard.inc.php"; ?>
     </head>
     <body>
-        <?php include "nav-top.inc.php"; ?>
+<?php include "nav-top.inc.php"; ?>
         <div class="container-fluid">
             <div class="row">
-                <?php include "nav-side.inc.php"; ?>    
+<?php include "nav-side.inc.php"; ?>    
                 <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
                     <h1 class="h2">Dashboard</h1>
                     <div class="card">
@@ -40,7 +41,7 @@
                                     . "LEFT JOIN food_calories AS b "
                                     . "ON a.Food_ID = b.Food_ID "
                                     . "WHERE timing between date_sub(now(),INTERVAL 1 WEEK) and now()"
-                                    . "AND User_ID = ".$_SESSION["ID"].";";
+                                    . "AND User_ID = " . $_SESSION["ID"] . ";";
                             $result = $conn->query($sql);
                             ?>
                             <div class="table-wrapper-scroll-y my-custom-scrollbar">
@@ -79,7 +80,7 @@
                                                                 "UPDATE food_history SET Servings =" . $updateValue . " WHERE EntryID = " . $entryID);
                                                         if (!$update) {
                                                             echo "Error updating entry" . $conn->error;
-                                                        } 
+                                                        }
                                                         header("Location: dashboard.php");
                                                     }
                                                     // If action is to DELETE
@@ -129,10 +130,10 @@
                                         $newFoodID = $_POST['foodOptions'];
                                         $newServing = $_POST['servings'];
                                         $newInsert = mysqli_query($conn,
-                                                "INSERT INTO food_history (User_ID, Food_ID, timing, Servings)VALUES (".$_SESSION['ID'].", " . $newFoodID . ", CURRENT_DATE(), " . $newServing . ");");
+                                                "INSERT INTO food_history (User_ID, Food_ID, timing, Servings)VALUES (" . $_SESSION['ID'] . ", " . $newFoodID . ", CURRENT_DATE(), " . $newServing . ");");
                                         if (!$newInsert) {
                                             echo "Error inserting entry foodID: " . $newFoodID . " error" . $newServing . ": " . $conn->connect_error;
-                                        } 
+                                        }
                                         header("Location: dashboard.php");
                                     }
                                     ?>
@@ -161,23 +162,22 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Weekly Statistics</h5>
-                                <p class="card-text">Total Calories: <?php echo $totalCalories; ?></p>
-                                <p class="card-text">Average Calories/Day: <?php echo number_format($totalCalories /= 7, 2); ?></p>
-                                <?php
-                                $totalCalories = $totalCalories / 7;
-                                if ($totalCalories <= 30) {
-                                    echo"<img class='img-responsive' src='https://clasebcn.com/wp-content/uploads/2020/04/harold-03.jpg' width='150' height='150'>";
-                                } else if ($totalCalories > 30 && $totalCalories < 50) {
-                                    echo"<img class='img-responsive' src='https://i0.kym-cdn.com/photos/images/original/001/119/076/193.jpg' width='150' height='150'>";
-                                } else {
-                                    echo"<img class='img-responsive' src='https://www.dailydot.com/wp-content/uploads/2018/03/haroldmancity.png' width='150' height='150'>";
-                                }
-                                ?>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weekly Statistics</h5>
+                                    <p class="card-text">Total Calories: <?php echo $totalCalories; ?></p>
+                                    <p class="card-text">Average Calories/Day: <?php echo number_format($totalCalories /= 7, 2); ?></p>
+                                    <?php
+                                    if ($totalCalories <= 30) {
+                                        echo"<img class='img-responsive' src='https://clasebcn.com/wp-content/uploads/2020/04/harold-03.jpg' width='150' height='150'>";
+                                    } else if ($totalCalories > 30 && $totalCalories < 50) {
+                                        echo"<img class='img-responsive' src='https://i0.kym-cdn.com/photos/images/original/001/119/076/193.jpg' width='150' height='150'>";
+                                    } else {
+                                        echo"<img class='img-responsive' src='https://www.dailydot.com/wp-content/uploads/2018/03/haroldmancity.png' width='150' height='150'>";
+                                    }
+                                    ?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -187,5 +187,5 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     </body>
-    <?php $conn->close(); ?>
+<?php $conn->close(); ?>
 </html>
