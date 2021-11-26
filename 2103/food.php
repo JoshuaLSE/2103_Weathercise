@@ -3,10 +3,10 @@
     <?php // include "connection.php"; ?>
     <?php
     session_start();
-    if (isset($_SESSION['ID'])) {
+    if (isset($_SESSION['Username'])) {
         
     } else {
-//        header('Location:login.php');
+        header('Location:login.php');
     }
     $todaysDate = new MongoDB\BSON\UTCDateTime(strtotime(date('Y-m-d')) * 1000);
     $weekAgo = new MongoDB\BSON\UTCDateTime(strtotime(date('Y-m-d', strtotime('-1 Week'))) * 1000);
@@ -45,7 +45,7 @@
                                         <!-- PHP CODE TO FETCH DATA FROM ROWS-->
                                         <?php
                                         $totalCalories = 0;
-                                        $filter = ["User_ID" => "1", "Date" => ['$gt' => $weekAgo]];
+                                        $filter = ["User_ID" => $_SESSION['Username'], "Date" => ['$gt' => $weekAgo]];
 //                                        $filter = ["User_ID" => $_SESSION['ID']];
 
                                         $options = []; /* put desired options here, should you need any */
@@ -129,7 +129,7 @@
                                         $bulk = new MongoDB\Driver\BulkWrite;
 //                                        Creating the document
                                         $insertEntry = [
-                                            'User_ID' => '1',
+                                            'User_ID' => $_SESSION['Username'],
                                             'Food_ID' => $newFoodID,
                                             'Servings' => $newServings,
                                             'Date' => $todaysDate,
