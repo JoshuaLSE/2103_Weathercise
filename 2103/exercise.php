@@ -2,7 +2,7 @@
 session_start();
 if (empty($_SESSION['Username'])) {
     echo "<h4>" . $_SESSION['Username'] . "</h4>";
-//    header("Location: login.php");
+    header("Location: login.php");
 }
 
 $m = new MongoDB\Driver\Manager("mongodb+srv://admin:Passw0rd@ict2103.jbggf.mongodb.net/test?authSource=admin&replicaSet=atlas-lie30k-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true");

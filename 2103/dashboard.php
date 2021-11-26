@@ -2,8 +2,12 @@
 $server = "mongodb+srv://admin:Passw0rd@ict2103.jbggf.mongodb.net/test?authSource=admin&replicaSet=atlas-lie30k-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true";
 $client = new MongoDB\Driver\Manager($server);
 // check for session id
-$_SESSION['ID'] = 1;
-$_SESSION["Username"] = "Botato";
+session_start();
+if (isset($_SESSION['Username'])) {
+    
+} else {
+    header('Location:login.php');
+}
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
@@ -39,8 +43,8 @@ $_SESSION["Username"] = "Botato";
                         Hello, <?php echo $_SESSION['Username'] ?>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="/ICT2103/update_profile.php">Update Profile</a></li>
-                        <li><a class="dropdown-item" href="/ICT2103/logout.php">Sign out</a></li>
+                        <li><a class="dropdown-item" href="/update_profile.php">Update Profile</a></li>
+                        <li><a class="dropdown-item" href="/logout.php">Sign out</a></li>
                     </ul>
                 </div>
             </div>
@@ -51,19 +55,19 @@ $_SESSION["Username"] = "Botato";
                     <!-- sidebar content goes in here --><div class="position-sticky pt-md-5">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/ICT2103/dashboard.php">
+                                <a class="nav-link active" aria-current="page" href="/dashboard.php">
                                     <i class="fa fa-home"width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></i>
                                     <span class="ml-2">Dashboard</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="/ICT2103/food.php">
+                                <a class="nav-link active" href="/food.php">
                                     <i class='fas fa-drumstick-bite' width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></i>
                                     <span class="ml-2">Food</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="/ICT2103/exercise.php">
+                                <a class="nav-link active" href="/exercise.php">
                                     <i class='fas fa-running' width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></i>
                                     <span class="ml-2">Exercise</span>
                                 </a>
@@ -91,18 +95,18 @@ $_SESSION["Username"] = "Botato";
                                 $filter = ["UserName" => strval($_SESSION['Username'])];
                                 $query = new MongoDB\Driver\Query($filter);
 
-#executing
+                                #executing
                                 $cursor = $client->executeQuery('ICT2103.user', $query);
-
+                                #storing User location_id
                                 foreach ($cursor as $document) {
                                     $location_id = $document->location_id;
                                 }
 
-                                //store current user location
+                                //store current user location_name
                                 $filter = ["location_id" => $location_id];
                                 $query = new MongoDB\Driver\Query($filter);
 
-#executing
+                                #executing
                                 $cursor = $client->executeQuery('ICT2103.locations', $query);
 
                                 foreach ($cursor as $document) {
@@ -239,7 +243,4 @@ $_SESSION["Username"] = "Botato";
 
 
 </html>
-© 2021 GitHub, Inc.
-Terms
-
 
